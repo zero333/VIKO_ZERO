@@ -1,0 +1,30 @@
+<Files viko.conf>
+deny from all
+</Files>
+
+php_flag register_globals off
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# redirect VIKO paths prior to 2.0
+RewriteRule  ^(opetaja.*|admin.*)$ http://%{SERVER_NAME} [R=301,L]
+
+RewriteRule  ^([a-z-]{4,})$   index.php?module=$1
+RewriteRule  ^([a-z-]{4,})/([^/]+)$   index.php?module=$1&par[]=$2
+RewriteRule  ^([a-z-]{4,})/([^/]+)/([^/]+)$   index.php?module=$1&par[]=$2&par[]=$3
+RewriteRule  ^([a-z-]{4,})/([^/]+)/([^/]+)/([^/]+)$   index.php?module=$1&par[]=$2&par[]=$3&par[]=$4
+RewriteRule  ^([a-z-]{4,})/([^/]+)/([^/]+)/([^/]+)/([^/]+)$   index.php?module=$1&par[]=$2&par[]=$3&par[]=$4&par[]=$5
+RewriteRule  ^([a-z-]{4,})/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$   index.php?module=$1&par[]=$2&par[]=$3&par[]=$4&par[]=$5&par[]=$6
+RewriteRule  ^([0-9]+)$   $1/course-info
+RewriteRule  ^([0-9]+)/([^/]+)$   index.php?course=$1&module=$2
+RewriteRule  ^([0-9]+)/([^/]+)/([^/]+)$   index.php?course=$1&module=$2&par[]=$3
+RewriteRule  ^([0-9]+)/([^/]+)/([^/]+)/([^/]+)$   index.php?course=$1&module=$2&par[]=$3&par[]=$4
+RewriteRule  ^([0-9]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$   index.php?course=$1&module=$2&par[]=$3&par[]=$4&par[]=$5
+RewriteRule  ^([0-9]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$   index.php?course=$1&module=$2&par[]=$3&par[]=$4&par[]=$5&par[]=$6
+
+</IfModule>
+
+# php_flag register_globals off

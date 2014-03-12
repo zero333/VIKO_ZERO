@@ -1,0 +1,7 @@
+#login #content{margin-top:1.5em;border-top:2px solid;padding-top:1em;border-color:#39c;}
+#login .col-1{width:33%;}
+#login .col-2{width:63%;}
+#login form{border:none;color:#333;background:white;}
+#login form dt{font-weight:normal;}
+#login form dd{margin:0;padding:0;padding-bottom:0.3em;}
+#login .col-2 img{float:right;}

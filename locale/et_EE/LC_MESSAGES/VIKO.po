@@ -1,0 +1,1630 @@
+# Estonian translations for VIKO package.
+# Copyright (C) 2006 VIKO team
+# This file is distributed under the same license as the VIKO package.
+# Rene Saarsoo <nene@triin.net>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Kannel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-27 10:51+0300\n"
+"PO-Revision-Date: 2006-05-24 12:34+0000\n"
+"Last-Translator: Rene Saarsoo <nene@triin.net>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../index.php:163 ../index.php:231
+msgid "Log out"
+msgstr "Logi välja"
+
+#: ../index.php:163 ../index.php:231
+msgid "Exit VIKO"
+msgstr "Välju VIKO’st"
+
+#: ../index.php:164 ../index.php:232 ../lib/Module/MyVIKO.php:82
+msgid "My VIKO"
+msgstr "Minu VIKO"
+
+#: ../index.php:164 ../index.php:232
+msgid "Main page of VIKO"
+msgstr "VIKO pealeht"
+
+#: ../index.php:211 ../lib/HTML.php:233 ../lib/Module.php:138
+msgid "Error!"
+msgstr "Viga!"
+
+#: ../index.php:212
+msgid "The course you are trying to access does not exist."
+msgstr "Kursust, kellele soovite ligi pääseda, ei eksisteeri."
+
+#: ../index.php:220 ../index.php:427
+msgid "Unauthorized access!"
+msgstr "Autoriseerimata sisenemine!"
+
+#: ../index.php:221
+msgid "You are not a member of the course you are trying to access."
+msgstr "Kahjuks pole sa registreeritud sellele kursusele, mida vaadata soovid."
+
+#: ../index.php:429
+msgid ""
+"Either your session has expired or you are trying to access this page "
+"without authentication."
+msgstr ""
+"Te kas proovite sellele lehele ilma autentimata ligi pääseda, või teie "
+"sessioon on lihtsalt aegunud."
+
+#: ../index.php:431
+msgid "Please log in to VIKO and then try again."
+msgstr "Sisene VIKO keskkonda ning proovi uuesti."
+
+#: ../lib/Embed.php:92
+msgid "Embed"
+msgstr "Vistutus"
+
+#: ../lib/Folder.php:79
+msgid "Folder"
+msgstr "Kaust"
+
+#: ../lib/FormList.php:134 ../lib/Module/Statistics.php:490
+msgid "Teachers"
+msgstr "Õpetajad"
+
+#: ../lib/FormList.php:135 ../lib/Module/Statistics.php:263
+#: ../lib/Module/Statistics.php:488
+msgid "School administrators"
+msgstr "Kooliadministraatorid"
+
+#: ../lib/HTML.php:252 ../lib/Module.php:160
+msgid "Access denied!"
+msgstr "Ligipääs keelatud!"
+
+#: ../lib/I18n.php:72
+#, php-format
+msgid "Unable to load file %s."
+msgstr "Faili %s laadimine ebaõnnestus."
+
+#: ../lib/Link.php:109
+msgid "Link"
+msgstr "Link"
+
+#: ../lib/MaterialForm.php:62
+msgid "Embed title"
+msgstr "Vistutuse pealkiri"
+
+#: ../lib/MaterialForm.php:69
+msgid "Each Embed content must have Title."
+msgstr "Igal vistutusel peab olema pealkiri."
+
+#: ../lib/MaterialForm.php:76 ../lib/MaterialForm.php:284
+msgid "Maximum %s characters allowed in title name."
+msgstr "Faili nimi võib olla maksimaalselt %s märgi pikkune."
+
+#: ../lib/MaterialForm.php:122
+msgid "Embed code"
+msgstr "Vistutuse kood"
+
+#: ../lib/MaterialForm.php:129
+msgid "You have to specify the address of the embed content you want to add."
+msgstr "Sa pead määrama vitutuse koodi."
+
+#: ../lib/MaterialForm.php:136 ../lib/MaterialForm.php:407
+#, php-format
+msgid "Maximum %s characters allowed in address."
+msgstr "Vistutuse kood võib olla maksimaalselt %s märgi pikkune."
+
+#: ../lib/MaterialForm.php:160
+msgid "File"
+msgstr "Fail"
+
+#: ../lib/MaterialForm.php:169
+msgid "You have to select the file, you want to upload."
+msgstr "Sa pead valima faili, mida soovid lisada."
+
+#: ../lib/MaterialForm.php:181
+#, php-format
+msgid "Files larger than %s are not allowed."
+msgstr "Fail ei tohi olla suurem kui %s."
+
+#: ../lib/MaterialForm.php:200
+msgid "New Filename"
+msgstr "Uus faili nimi"
+
+#: ../lib/MaterialForm.php:207
+#, php-format
+msgid "Maximum %s characters allowed in file name."
+msgstr "Faili nimi võib olla maksimaalselt %s märgi pikkune."
+
+#: ../lib/MaterialForm.php:231
+msgid "Folder name"
+msgstr "Kausta nimi"
+
+#: ../lib/MaterialForm.php:238
+msgid "Each folder must have name."
+msgstr "Igal kaustal peab olema nimi."
+
+#: ../lib/MaterialForm.php:245
+#, php-format
+msgid "Maximum %s characters allowed in folder name."
+msgstr "Kausta nimi võib olla maksimaalselt %s märgi pikkune."
+
+#: ../lib/MaterialForm.php:270
+msgid "Title"
+msgstr "Pealkiri"
+
+#: ../lib/MaterialForm.php:277
+msgid "Each text must have title."
+msgstr "Igal tekstil peab olema pealkiri."
+
+#: ../lib/MaterialForm.php:309
+msgid "Link name"
+msgstr "Lingi nimi"
+
+#: ../lib/MaterialForm.php:316
+#, php-format
+msgid "Maximum %s characters allowed in link name."
+msgstr "Lingi nimi võib olla maksimaalselt %s märgi pikkune."
+
+#: ../lib/MaterialForm.php:340
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: ../lib/MaterialForm.php:347
+#, php-format
+msgid "Maximum %s characters allowed in description."
+msgstr "Kirjeldus võib olla maksimaalselt %s märgi pikkune."
+
+#: ../lib/MaterialForm.php:393
+msgid "Web address"
+msgstr "Veebiaadress"
+
+#: ../lib/MaterialForm.php:400
+msgid "You have to specify the address of the link you want to add."
+msgstr "Sa pead määrama lisatava lingi aadressi."
+
+#: ../lib/MimeType.php:164
+msgid "Image file"
+msgstr "Pildifail"
+
+#: ../lib/MimeType.php:167
+msgid "Audio file"
+msgstr "Helifail"
+
+#: ../lib/MimeType.php:170
+msgid "Video file"
+msgstr "Videofail"
+
+#: ../lib/MimeType.php:173
+msgid "Text document"
+msgstr "Tekstidokument"
+
+#: ../lib/MimeType.php:176
+msgid "PDF document"
+msgstr "PDF dokument"
+
+#: ../lib/MimeType.php:179
+msgid "Presentation"
+msgstr "Esitlus"
+
+#: ../lib/MimeType.php:182
+msgid "Spreadsheet"
+msgstr "Arvutustabel"
+
+#: ../lib/MimeType.php:185
+msgid "Archive"
+msgstr "Arhiiv"
+
+#: ../lib/MimeType.php:188
+msgid "Text file"
+msgstr "Tekstifail"
+
+#: ../lib/MimeType.php:191
+msgid "Web page"
+msgstr "Veebileht"
+
+#: ../lib/Text.php:80
+msgid "Text"
+msgstr "Tekst"
+
+#: ../lib/VIKO.php:95 ../lib/VIKO.php:113
+msgid "learning environment"
+msgstr "õpikeskkond"
+
+#: ../lib/VIKO.php:115
+msgid "student environment"
+msgstr "õpilase keskkond"
+
+#: ../lib/VIKO.php:117
+msgid "teacher environment"
+msgstr "õpetaja keskkond"
+
+#: ../lib/VIKO.php:119
+msgid "school administrator environment"
+msgstr "kooliadministraatori keskkond"
+
+#: ../lib/VIKO.php:121
+msgid "administrator environment"
+msgstr "administraatori keskkond"
+
+#: ../lib/VIKO.php:361
+msgid "Tallinn University %year1%-%year2%"
+msgstr "Tallinna Ülikool %year1%-%year2%"
+
+#: ../lib/Module/ChangePassword.php:60 ../lib/Module/MyVIKO.php:328
+msgid "Change password"
+msgstr "Parooli muutmine"
+
+#: ../lib/Module/ChangePassword.php:71
+msgid "Password updated successfully."
+msgstr "Parool edukalt muudetud."
+
+#: ../lib/Module/ChangePassword.php:79 ../lib/Module/ChangeUserinfo.php:78
+#: ../lib/Module/CourseAdd.php:82 ../lib/Module/Forms.php:123
+#: ../lib/Module/Hometasks.php:82 ../lib/Module/Statistics.php:120
+#: ../lib/Module/Statistics.php:284 ../lib/Module/Teachers.php:71
+msgid "Return to the main page"
+msgstr "Tagasi pealehele"
+
+#: ../lib/Module/ChangePassword.php:112 ../lib/Module/ChangeUserinfo.php:132
+#: ../lib/Module/ForgotPassword.php:110 ../lib/Module/Login.php:127
+#: ../lib/Module/Login.php:188 ../lib/Module/Register.php:408
+#: ../lib/Module/User.php:500
+msgid "Username"
+msgstr "Kasutajanimi"
+
+#: ../lib/Module/ChangePassword.php:118
+msgid "Old password"
+msgstr "Vana parool"
+
+#: ../lib/Module/ChangePassword.php:124
+msgid "New password"
+msgstr "Uus parool"
+
+#: ../lib/Module/ChangePassword.php:130 ../lib/Module/Register.php:513
+#: ../lib/Module/User.php:677
+msgid "Repeat password"
+msgstr "Korda parooli"
+
+#: ../lib/Module/ChangePassword.php:136 ../lib/Module/ChangeUserinfo.php:160
+#: ../lib/Module/Form.php:228 ../lib/Module/School.php:265
+#: ../lib/Module/User.php:435 ../lib/Module/Course/Info.php:316
+#: ../lib/Module/Course/Marks.php:253
+msgid "Save"
+msgstr "Salvesta"
+
+#: ../lib/Module/ChangePassword.php:141 ../lib/Module/ChangePassword.php:146
+#: ../lib/Module/ChangePassword.php:151 ../lib/Module/CourseAdd.php:128
+#: ../lib/Module/Form.php:236 ../lib/Module/Register.php:520
+#: ../lib/Module/Register.php:525 ../lib/Module/School.php:273
+#: ../lib/Module/User.php:685 ../lib/Module/User.php:690
+msgid "This field is required"
+msgstr "See väli on kohustuslik"
+
+#: ../lib/Module/ChangePassword.php:160
+msgid "The old password is incorrect"
+msgstr "Endine parool on vale"
+
+#: ../lib/Module/ChangePassword.php:167 ../lib/Module/Register.php:532
+#: ../lib/Module/User.php:698
+msgid "The passwords do not match."
+msgstr "Paroolid ei kattu."
+
+#: ../lib/Module/ChangePassword.php:174 ../lib/Module/Register.php:539
+#: ../lib/Module/User.php:705
+msgid "Password must be at least 5 characters long."
+msgstr "Parool peab sisaldama vähemalt 5 sümbilit."
+
+#: ../lib/Module/ChangePassword.php:182 ../lib/Module/Register.php:547
+#: ../lib/Module/User.php:713
+msgid "Password may only contain characters from the ASCII range."
+msgstr "Parool võib sisaldada vaid ASCII sümboleid."
+
+#: ../lib/Module/ChangeUserinfo.php:59 ../lib/Module/MyVIKO.php:327
+msgid "Change userinfo"
+msgstr "Kasutajainfo muutmine"
+
+#: ../lib/Module/ChangeUserinfo.php:71
+msgid "Userinfo updated successfully."
+msgstr "Kasutajainfo edukalt muudetud."
+
+#: ../lib/Module/ChangeUserinfo.php:131 ../lib/Module/Statistics.php:346
+#: ../lib/Module/Teachers.php:115 ../lib/Module/User.php:240
+msgid "Name"
+msgstr "Nimi"
+
+#: ../lib/Module/ChangeUserinfo.php:137 ../lib/Module/Register.php:161
+#: ../lib/Module/Register.php:471 ../lib/Module/User.php:246
+#: ../lib/Module/User.php:615
+msgid "School"
+msgstr "Kool"
+
+#: ../lib/Module/ChangeUserinfo.php:143 ../lib/Module/Forms.php:197
+#: ../lib/Module/Register.php:489 ../lib/Module/User.php:243
+#: ../lib/Module/User.php:637 ../lib/Module/Course/Info.php:267
+#: ../lib/Module/Course/Students.php:274
+msgid "Form"
+msgstr "Klass"
+
+#: ../lib/Module/ChangeUserinfo.php:159 ../lib/Module/User.php:249
+msgid "e-mail"
+msgstr "e-post"
+
+#: ../lib/Module/ChangeUserinfo.php:164 ../lib/Module/Register.php:452
+#: ../lib/Module/User.php:553
+msgid "This is not a correct e-mail address."
+msgstr "See pole korrektne e-posti aadress."
+
+#: ../lib/Module/CourseAdd.php:62
+msgid "You are not authorized to add courses."
+msgstr "Sul pole kursuste lisamiseks õigusi."
+
+#: ../lib/Module/CourseAdd.php:76
+msgid "Add new course"
+msgstr "Lisa uus kursus"
+
+#: ../lib/Module/CourseAdd.php:123 ../lib/Module/Hometasks.php:130
+#: ../lib/Module/MyVIKO.php:116 ../lib/Module/MyVIKO.php:185
+#: ../lib/Module/Statistics.php:526 ../lib/Module/Course/Info.php:261
+msgid "Course name"
+msgstr "Kursuse nimi"
+
+#: ../lib/Module/CourseAdd.php:124 ../lib/Module/MyVIKO.php:152
+msgid "Add course"
+msgstr "Lisa kursus"
+
+#: ../lib/Module/CourseAdd.php:133
+msgid "Course name may not only consist of spaces."
+msgstr "Kursuse nimi peab sisaldama ka muid märke peale tühikute."
+
+#: ../lib/Module/CourseDelete.php:106
+msgid "You are not authorized to delete courses."
+msgstr "Sul pole kursuste kustutamiseks õigusi."
+
+#: ../lib/Module/CourseDelete.php:111
+msgid "The selected course does not exist."
+msgstr "Kursust, mille valisite, ei eksisteeri."
+
+#: ../lib/Module/CourseDelete.php:117
+msgid "You are not authorized to delete this course."
+msgstr "Sul pole selle kursuse kustutamiseks õigusi."
+
+#: ../lib/Module/CourseDelete.php:136
+#, php-format
+msgid "Are you really sure you want to delete the course %s?"
+msgstr "Kas tõesti soovid kustutada kursuse %s?"
+
+#: ../lib/Module/CourseDelete.php:142
+#, php-format
+msgid "There is %d student on this course."
+msgid_plural "There are %d students on this course."
+msgstr[0] "Sellel kursusel on %d õpilane."
+msgstr[1] "Sellel kursusel on %d õpilast."
+
+#: ../lib/Module/CourseDelete.php:152
+msgid "Yes, please remove this course."
+msgstr "Jah, palun eemalda see kursus."
+
+#: ../lib/Module/ForgotPassword.php:79 ../lib/Module/Login.php:100
+msgid "Forgot your password?"
+msgstr "Unustasid parooli?"
+
+#: ../lib/Module/ForgotPassword.php:82
+msgid ""
+"Enter your username and we send a new password to your e-mail address\n"
+"(specified in your profile). If your profile does not contain e-mail\n"
+"address, the school administrator of VIKO is notified about this lost\n"
+"password."
+msgstr ""
+"Sisesta oma kasutajanimi ja me saadame parooli sinu e-posti aadressile (mis "
+"on määratud sinu kasutajainfos). Kui teie kasutajainfos pole e-posti "
+"aadressi määratud, teavitatakse teie parooli kaotsiminekust VIKO "
+"kooliadministraatorit."
+
+#: ../lib/Module/ForgotPassword.php:91 ../lib/Module/Register.php:141
+#: ../lib/Module/Register.php:289 ../lib/Module/Register.php:304
+msgid "Return to the front page of VIKO"
+msgstr "Tagasi VIKO avalehele"
+
+#: ../lib/Module/ForgotPassword.php:118 ../lib/Module/ForgotPassword.php:201
+msgid "No user exists with specified username."
+msgstr "Sellise kasutajanimega kasutajat ei eksisteeri."
+
+#: ../lib/Module/ForgotPassword.php:126
+msgid ""
+"This username belongs to administrator or school administrator. Only "
+"students and teachers can use this form for retrieving new password."
+msgstr ""
+"See kasutajanimi kuulub VIKO administraatorile või kooliadministraatorile. "
+"Üksnes õpilased ja õpetajad saavad kasutada seda vormi siin unustatud "
+"parooli korral."
+
+#: ../lib/Module/ForgotPassword.php:133
+msgid "Ask for new password"
+msgstr "Küsi uus parool"
+
+#: ../lib/Module/ForgotPassword.php:236
+msgid "Unable to change password of specified user."
+msgstr "Määratud kasutaja parooli ei õnnestunud muuta."
+
+#: ../lib/Module/ForgotPassword.php:243
+msgid "Password successfully changed!"
+msgstr "Parool edukalt muudetud!"
+
+#: ../lib/Module/ForgotPassword.php:245
+msgid ""
+"New password has been generated and sent to your e-mail address. Check your "
+"mailbox for your new VIKO password."
+msgstr ""
+"Loodi uus parool ja saadeti sinu e-posti aadressile. Kontrolli oma "
+"postkasti, et näha, kas sinna on saabunud uus VIKO parool."
+
+#: ../lib/Module/ForgotPassword.php:250
+msgid "Failed sending password with e-mail."
+msgstr "Parooli saatmine e-postiga ebaõnnestus."
+
+#: ../lib/Module/ForgotPassword.php:269
+msgid "There are no school administrators in your school."
+msgstr "Sinu koolis pole ühtegi kooliadministraatorit."
+
+#: ../lib/Module/ForgotPassword.php:277
+msgid ""
+"The school administrator of your school has no e-mail address specified."
+msgstr "Sinu kooli kooliadinistraatoril pole e-posti aadressi määratud."
+
+#: ../lib/Module/ForgotPassword.php:285
+msgid "School administrator has been notified"
+msgstr "Kooliadministraatorit on teavitatud"
+
+#: ../lib/Module/ForgotPassword.php:287
+msgid ""
+"A message has been sent to school administrator, telling that you have lost "
+"your password."
+msgstr ""
+"Sinu kooliadministraatorile on saadetud teade selle kohta, et oled kaotanud "
+"oma parooli."
+
+#: ../lib/Module/ForgotPassword.php:292
+msgid "Failed sending e-mail to school administrator."
+msgstr "E-kirja saatmine kooliadministraatorile ebaõnnestus."
+
+#: ../lib/Module/ForgotPassword.php:358 ../lib/Module/ForgotPassword.php:405
+msgid "VIKO Support"
+msgstr "VIKO Tugi"
+
+#: ../lib/Module/ForgotPassword.php:362
+msgid "VIKO: Password change"
+msgstr "VIKO: Paroolivahetus"
+
+#: ../lib/Module/ForgotPassword.php:410
+#, php-format
+msgid "VIKO: User %s forgot password"
+msgstr "VIKO: Kasutaja %s unustas parooli"
+
+#: ../lib/Module/Form.php:108 ../lib/Module/Forms.php:90
+msgid "You are not authorized to add or edit forms."
+msgstr "Sul pole õigusi klasside lisamiseks või kustutamiseks."
+
+#: ../lib/Module/Form.php:115
+msgid "The form you are trying to edit does not exist."
+msgstr "Klassi, mida soovite muuta, ei eksisteeri."
+
+#: ../lib/Module/Form.php:150
+msgid "Add new form"
+msgstr "Lisa uus klass"
+
+#: ../lib/Module/Form.php:156 ../lib/Module/Form.php:188
+#: ../lib/Module/Students.php:106
+msgid "Return to the list of forms"
+msgstr "Tagasi klasside nimekirja juurde"
+
+#: ../lib/Module/Form.php:182 ../lib/Module/Forms.php:198
+msgid "Change form name"
+msgstr "Muuda klassi nime"
+
+#: ../lib/Module/Form.php:223 ../lib/Module/MyVIKO.php:117
+#: ../lib/Module/Course/Students.php:510 ../lib/Module/Course/Students.php:521
+msgid "Form name"
+msgstr "Klassi nimi"
+
+#: ../lib/Module/Form.php:231 ../lib/Module/Forms.php:124
+msgid "Add form"
+msgstr "Lisa klass"
+
+#: ../lib/Module/Form.php:241
+msgid "Form name may not only consist of spaces."
+msgstr "Klassi nimi peab sisaldama ka muid märke peale tühikute."
+
+#: ../lib/Module/Form.php:248 ../lib/Module/School.php:285
+msgid "This name is already in use - please choose another."
+msgstr "See nimi on juba kasutuses – vali mõni muu."
+
+#: ../lib/Module/Forms.php:96 ../lib/Module/Students.php:89
+#: ../lib/Module/Course/Students.php:243
+msgid "The selected form does not exist."
+msgstr "Klassi, mille valisite, ei eksisteeri."
+
+#: ../lib/Module/Forms.php:103
+msgid "You are not authorized to delete this form."
+msgstr "Sul pole selle klassi kustutamiseks õigusi."
+
+#: ../lib/Module/Forms.php:111 ../lib/Module/Forms.php:120
+#: ../lib/Module/Statistics.php:399
+msgid "Forms"
+msgstr "Klassid"
+
+#: ../lib/Module/Forms.php:141
+#, php-format
+msgid "Form %s was successfully deleted."
+msgstr "Klass %s edukalt kustutatud."
+
+#: ../lib/Module/Forms.php:164
+#, php-format
+msgid "Are you sure you want to delete form %s?"
+msgstr "Kas tõesti soovid kustutada klassi %s?"
+
+#: ../lib/Module/Forms.php:170
+#, php-format
+msgid "There is %d student in this form. This student will be also deleted."
+msgid_plural ""
+"There are %d students in this form. All these students will be also deleted."
+msgstr[0] ""
+"Selles klassis on %d õpilane. Klassi eemaldamisel kustutatakse ka õpilane."
+msgstr[1] ""
+"Selles klassis on %d õpilast. Klassi eemaldamisel kustutatakse ka kõik sinna "
+"kuuluvad õpilased."
+
+#: ../lib/Module/Forms.php:180
+msgid "Yes, please delete this form."
+msgstr "Jah, palun eemalda see klass."
+
+#: ../lib/Module/Forms.php:195
+msgid "List of all forms in this school"
+msgstr "Nimekiri kõigist klassidest selles koolis"
+
+#: ../lib/Module/Forms.php:199 ../lib/Module/MyVIKO.php:118
+#: ../lib/Module/Statistics.php:148 ../lib/Module/Statistics.php:527
+msgid "Nr of students"
+msgstr "Õpilasi"
+
+#: ../lib/Module/Forms.php:200
+msgid "Delete form"
+msgstr "Kustuta klass"
+
+#: ../lib/Module/Forms.php:208
+msgid "There are no forms in this school."
+msgstr "Selles koolis pole ühtegi klassi."
+
+#: ../lib/Module/Forms.php:220 ../lib/Module/MyVIKO.php:132
+#: ../lib/Module/Statistics.php:167 ../lib/Module/Statistics.php:358
+#: ../lib/Module/Students.php:155 ../lib/Module/Teachers.php:140
+#: ../lib/Module/Course/Forum.php:428 ../lib/Module/Course/Materials.php:359
+#, php-format
+msgid "Delete %s"
+msgstr "Kustuta %s"
+
+#: ../lib/Module/Forms.php:228 ../lib/Module/Course/Lessons.php:200
+#: ../lib/Module/Course/Lessons.php:279 ../lib/Module/Course/Marks.php:438
+#: ../lib/Module/Course/Materials.php:326
+#: ../lib/Module/Course/Materials.php:371
+msgid "Edit"
+msgstr "Muuda"
+
+#: ../lib/Module/Forms.php:242 ../lib/Module/Statistics.php:228
+#: ../lib/Module/Statistics.php:505 ../lib/Module/Statistics.php:618
+#: ../lib/Module/Students.php:178 ../lib/Module/Teachers.php:195
+#: ../lib/Module/Course/Materials.php:410
+msgid "Total"
+msgstr "Kokku"
+
+#: ../lib/Module/Hometasks.php:63 ../lib/Module/MyVIKO.php:204
+msgid "Hometasks"
+msgstr "Kodused ülesanded"
+
+#: ../lib/Module/Hometasks.php:70
+msgid "Past hometasks (not older than two weeks):"
+msgstr "Möödunud kodutööd (mitte vanemad kui kaks nädalat):"
+
+#: ../lib/Module/Hometasks.php:74
+msgid "Future hometasks:"
+msgstr "Tulevased kodutööd:"
+
+#: ../lib/Module/Hometasks.php:79
+msgid "There are no hometasks in near past or in future."
+msgstr "Ei lähiminevikus ega tulevikus ole ühtki kodutööd."
+
+#: ../lib/Module/Hometasks.php:129 ../lib/Module/Course/Lessons.php:196
+#: ../lib/Module/Course/Lessons.php:421
+msgid "Term"
+msgstr "Tähtaeg"
+
+#: ../lib/Module/Hometasks.php:131 ../lib/Module/Course/Lessons.php:195
+#: ../lib/Module/Course/Lessons.php:415
+msgid "Hometask"
+msgstr "Kodune ülesanne"
+
+#: ../lib/Module/Login.php:73
+msgid "VIKO learning environment"
+msgstr "VIKO õpikeskkond"
+
+#: ../lib/Module/Login.php:97
+msgid "Log in"
+msgstr "Logi sisse"
+
+#: ../lib/Module/Login.php:99
+msgid "Register as a new user."
+msgstr "Registreeru kasutajaks."
+
+#: ../lib/Module/Login.php:128 ../lib/Module/Login.php:189
+#: ../lib/Module/Register.php:507 ../lib/Module/User.php:671
+msgid "Password"
+msgstr "Parool"
+
+#: ../lib/Module/Login.php:129 ../lib/Module/Login.php:190
+msgid "Get in"
+msgstr "Sisene"
+
+#: ../lib/Module/Login.php:170
+msgid "Login Failed!"
+msgstr "Sisselogimine ebaõnnestus!"
+
+#: ../lib/Module/Login.php:171
+msgid "Either the username or password you entered was wrong."
+msgstr "Sisestatud parool või kasutajanimi polnud korrektne."
+
+#: ../lib/Module/Login.php:172
+msgid "Try again."
+msgstr "Proovi uuesti."
+
+#: ../lib/Module/MyVIKO.php:85 ../lib/Module/User.php:238
+msgid "User"
+msgstr "Kasutaja"
+
+#: ../lib/Module/MyVIKO.php:106 ../lib/Module/MyVIKO.php:180
+#: ../lib/Module/Statistics.php:273 ../lib/Module/Statistics.php:416
+msgid "Courses"
+msgstr "Kursused"
+
+#: ../lib/Module/MyVIKO.php:119
+msgid "Delete course"
+msgstr "Kustuta kursus"
+
+#: ../lib/Module/MyVIKO.php:186 ../lib/Module/Teachers.php:150
+#: ../lib/Module/User.php:579 ../lib/Module/Course/Info.php:202
+#: ../lib/Module/Course/Info.php:274
+msgid "Teacher"
+msgstr "Õpetaja"
+
+#: ../lib/Module/MyVIKO.php:187 ../lib/Module/Course/Marks.php:102
+#: ../lib/Module/Course/Marks.php:397
+msgid "Marks"
+msgstr "Hinded"
+
+#: ../lib/Module/MyVIKO.php:294
+msgid "VIKO administration"
+msgstr "VIKO administreerimine"
+
+#: ../lib/Module/MyVIKO.php:295 ../lib/Module/Statistics.php:115
+msgid "VIKO server statistics"
+msgstr "VIKO serveri statistika"
+
+#: ../lib/Module/MyVIKO.php:298
+msgid "School administration"
+msgstr "Kooli administreerimine"
+
+#: ../lib/Module/MyVIKO.php:301 ../lib/Module/Statistics.php:259
+msgid "School statistics"
+msgstr "Kooli statistika"
+
+#: ../lib/Module/MyVIKO.php:302
+msgid "Teachers and school administrators"
+msgstr "Õpetajad ja kooliadministraatorid"
+
+#: ../lib/Module/MyVIKO.php:303
+msgid "Forms and students"
+msgstr "Klassid ja õpilased"
+
+#: ../lib/Module/MyVIKO.php:325
+msgid "Settings"
+msgstr "Seaded"
+
+#: ../lib/Module/MyVIKO.php:345
+msgid "Help"
+msgstr "Abi"
+
+#: ../lib/Module/MyVIKO.php:346
+msgid "Teacher support system"
+msgstr "Õpetaja tugisüsteem"
+
+#: ../lib/Module/Register.php:85
+msgid "The school you have chosen does not exist."
+msgstr "Kooli, mille valisite, ei eksisteeri."
+
+#: ../lib/Module/Register.php:112
+msgid "Registration of students has been disabled."
+msgstr "Õpilaseks registreerumine pole lubatud."
+
+#: ../lib/Module/Register.php:119
+msgid "There are no schools in VIKO to choose form."
+msgstr "VIKOs pole ühtegi kooli, mille seast valida."
+
+#: ../lib/Module/Register.php:139
+msgid "User registration: select school"
+msgstr "Kasutajaks registreerumine: kooli valik"
+
+#: ../lib/Module/Register.php:169
+msgid "Choose"
+msgstr "Vali"
+
+#: ../lib/Module/Register.php:280
+msgid "User registration: student data"
+msgstr "Kasutajaks registreerumine: õpilase andmed"
+
+#: ../lib/Module/Register.php:286
+msgid "Registration successful!"
+msgstr "Registreerumine õnnestus!"
+
+#: ../lib/Module/Register.php:287
+msgid "You have successfully registered as new VIKO user."
+msgstr "Oled edukalt registreeritud uueks VIKO kasutajaks."
+
+#: ../lib/Module/Register.php:288
+msgid "You may now go to the front page of VIKO and log in."
+msgstr "Nüüd võid minna VIKO avalehele ja sisse logida."
+
+#: ../lib/Module/Register.php:297
+msgid ""
+"Sorry, but registering your account failed. Please try again, maybe it "
+"succeeds this time."
+msgstr ""
+"Vabandame, teie kasutajakonto registreerimine ebaõnnestus. Palun proovi "
+"uuesti, võibolla seekord siiski õnnestub."
+
+#: ../lib/Module/Register.php:355
+msgid "Register"
+msgstr "Registreeru"
+
+#: ../lib/Module/Register.php:373 ../lib/Module/User.php:456
+msgid "Firstname"
+msgstr "Eesnimi"
+
+#: ../lib/Module/Register.php:379 ../lib/Module/User.php:462
+msgid "Lastname"
+msgstr "Perekonnanimi"
+
+#: ../lib/Module/Register.php:386 ../lib/Module/User.php:469
+msgid "Every person must have a first name."
+msgstr "Igal isikul peab olema eesnimi."
+
+#: ../lib/Module/Register.php:391 ../lib/Module/User.php:474
+msgid "Every person must have a last name."
+msgstr "Igal isikul peab olema perekonnanimi."
+
+#: ../lib/Module/Register.php:416 ../lib/Module/User.php:508
+msgid "All users need a username."
+msgstr "Kõigil kasutajatel peab olema kasutajanimi."
+
+#: ../lib/Module/Register.php:421 ../lib/Module/User.php:513
+msgid "Username may only consist of characters a-z, A-Z, 0-9, _ and -."
+msgstr "Kasutajanimi võib sisaldada vaid sümboleid a-z, A-Z, 0-9, _ ja -."
+
+#: ../lib/Module/Register.php:428 ../lib/Module/User.php:520
+msgid "This username is already in use - choose another."
+msgstr "See kasutajanimi on juba kasutuses – vali mõni muu."
+
+#: ../lib/Module/Register.php:445 ../lib/Module/User.php:546
+msgid "E-mail"
+msgstr "e-post"
+
+#: ../lib/Module/School.php:118
+msgid "You are not authorized to add, edit or delete schools."
+msgstr "Sul pole õigusi koolide lisamiseks, muutmiseks või kustutamiseks."
+
+#: ../lib/Module/School.php:124 ../lib/Module/Statistics.php:95
+msgid "The school you are trying to access does not exist."
+msgstr "Kooli, millele soovite ligi pääseda, ei eksisteeri."
+
+#: ../lib/Module/School.php:152 ../lib/Module/School.php:268
+#: ../lib/Module/Statistics.php:121
+msgid "Add school"
+msgstr "Lisa kool"
+
+#: ../lib/Module/School.php:159
+msgid "School successfully added."
+msgstr "Kool edukalt lisatud."
+
+#: ../lib/Module/School.php:167 ../lib/Module/School.php:199
+#: ../lib/Module/School.php:241 ../lib/Module/Statistics.php:279
+msgid "Return to the list of all schools"
+msgstr "Tagasi kõigi koolide nimekirja juurde"
+
+#: ../lib/Module/School.php:184 ../lib/Module/Statistics.php:280
+msgid "Change school name"
+msgstr "Muuda kooli nime"
+
+#: ../lib/Module/School.php:191
+msgid "School name successfully changed."
+msgstr "Kooli nimi edukalt muudetud."
+
+#: ../lib/Module/School.php:225 ../lib/Module/Statistics.php:151
+msgid "Delete school"
+msgstr "Kustuta kool"
+
+#: ../lib/Module/School.php:231
+msgid "School successfully deleted."
+msgstr "Kool edukalt kustutatud."
+
+#: ../lib/Module/School.php:234
+msgid "Are you sure you want to delete school %s?"
+msgstr "Kas tõesti soovid kustutada kooli %s?"
+
+#: ../lib/Module/School.php:237
+msgid "Yes, please delete this school."
+msgstr "Jah, palun eemalda see kool."
+
+#: ../lib/Module/School.php:260 ../lib/Module/Statistics.php:146
+msgid "School name"
+msgstr "Kooli nimi"
+
+#: ../lib/Module/School.php:278
+msgid "School name may not only consist of spaces."
+msgstr "Kooli nimi peab sisaldama ka muid märke peale tühikute."
+
+#: ../lib/Module/Statistics.php:90
+msgid "You are not authorized to access school statistics."
+msgstr "Sul pole õigusi kooli statistika vaatamiseks."
+
+#: ../lib/Module/Statistics.php:141
+msgid "There are no schools in VIKO. Create new school using the link below."
+msgstr "VIKOs pole ühtegi kooli. Uue kooli loomiseks kasuta allolevat linki."
+
+#: ../lib/Module/Statistics.php:144
+msgid "List of all schools in VIKO server."
+msgstr "Nimekiri kõigist koolidest VIKO serveris."
+
+#: ../lib/Module/Statistics.php:147
+msgid "Nr of teachers"
+msgstr "Õpetajaid"
+
+#: ../lib/Module/Statistics.php:149 ../lib/Module/Students.php:125
+#: ../lib/Module/Teachers.php:117
+msgid "Nr of courses"
+msgstr "Kursuseid"
+
+#: ../lib/Module/Statistics.php:150 ../lib/Module/Statistics.php:532
+msgid "Size of files"
+msgstr "Failide maht"
+
+#: ../lib/Module/Statistics.php:241
+msgid ""
+"Total %nr1% schools in VIKO. %nr2% of these having at least 10 students."
+msgstr ""
+"VIKOs on kokku %nr1% kooli. Nendest %nr2% on sellised, kus on vähemalt kümme "
+"õpilast."
+
+#: ../lib/Module/Statistics.php:267
+msgid "Users"
+msgstr "Kasutajad"
+
+#: ../lib/Module/Statistics.php:270
+msgid "General statistics"
+msgstr "Üldine statistika"
+
+#: ../lib/Module/Statistics.php:303 ../lib/Module/Teachers.php:73
+msgid "Add school administrator"
+msgstr "Lisa kooliadministraator"
+
+#: ../lib/Module/Statistics.php:341
+msgid "There are no school administrators in this school."
+msgstr "Selles koolis pole ühtegi kooliadministraatorit."
+
+#: ../lib/Module/Statistics.php:344
+msgid "List of all schooladmins in this school"
+msgstr "Nimekiri kõigist kooliadministraatoritest selles koolis"
+
+#: ../lib/Module/Statistics.php:347 ../lib/Module/Teachers.php:119
+msgid "Delete user"
+msgstr "Kustuta kasutaja"
+
+#: ../lib/Module/Statistics.php:385
+msgid "Number of classes, courses and lessons in the school"
+msgstr "Klasside, kursuste ja tundide arv selles koolis"
+
+#: ../lib/Module/Statistics.php:387
+msgid "Entity"
+msgstr "Olem"
+
+#: ../lib/Module/Statistics.php:388
+msgid "Count"
+msgstr "Hulk"
+
+#: ../lib/Module/Statistics.php:436 ../lib/Module/Course/Lessons.php:109
+#: ../lib/Module/Course/Marks.php:636
+msgid "Lessons"
+msgstr "Tunnid"
+
+#: ../lib/Module/Statistics.php:454
+msgid "Number of users from different groups in the school"
+msgstr "Erinevat liiki kasutajate arv koolis"
+
+#: ../lib/Module/Statistics.php:456 ../lib/Module/Teachers.php:116
+#: ../lib/Module/User.php:586
+msgid "User group"
+msgstr "Kasutajagrupp"
+
+#: ../lib/Module/Statistics.php:457
+msgid "Nr of users"
+msgstr "Kasutajaid"
+
+#: ../lib/Module/Statistics.php:481
+msgid "There are no users in this school."
+msgstr "Selles koolis pole ühtegi kasutajat."
+
+#: ../lib/Module/Statistics.php:486
+msgid "Administrators"
+msgstr "Administraatorid"
+
+#: ../lib/Module/Statistics.php:492 ../lib/Module/Course/Students.php:112
+msgid "Students"
+msgstr "Õpilased"
+
+#: ../lib/Module/Statistics.php:524
+msgid "List of all courses in this school."
+msgstr "Nimekiri kõigist kursustest selles koolis."
+
+#: ../lib/Module/Statistics.php:528
+msgid "Nr of visits"
+msgstr "Laadimisi"
+
+#: ../lib/Module/Statistics.php:529
+msgid "Nr of grades"
+msgstr "Hindeid"
+
+#: ../lib/Module/Statistics.php:530 ../lib/Module/Students.php:127
+#: ../lib/Module/Course/Students.php:513
+msgid "Nr of messages"
+msgstr "Sõnumeid"
+
+#: ../lib/Module/Statistics.php:531 ../lib/Module/Students.php:128
+#: ../lib/Module/Course/Students.php:514
+msgid "Nr of materials"
+msgstr "Materjale"
+
+#: ../lib/Module/Statistics.php:552
+msgid "There are no courses in this school."
+msgstr "Selles koolis pole ühtegi kursust."
+
+#: ../lib/Module/Students.php:84
+msgid "You are not authorized to add or edit students."
+msgstr "Sul pole õigusi õpilaste lisamiseks või muutmiseks."
+
+#: ../lib/Module/Students.php:96
+msgid "You are not authorized to access this form."
+msgstr "Sul pole selle klassi vaatamiseks õigusi."
+
+#: ../lib/Module/Students.php:99
+msgid "Students of %form_name%"
+msgstr "%form_name% õpilased"
+
+#: ../lib/Module/Students.php:107
+msgid "Add student"
+msgstr "Lisa õpilane"
+
+#: ../lib/Module/Students.php:122
+msgid "List of all students in this form"
+msgstr "Nimekiri kõigist õpilastest selles klassis"
+
+#: ../lib/Module/Students.php:124 ../lib/Module/Course/Marks.php:392
+#: ../lib/Module/Course/Students.php:509 ../lib/Module/Course/Students.php:520
+msgid "Student name"
+msgstr "Õpilase nimi"
+
+#: ../lib/Module/Students.php:126 ../lib/Module/Course/Students.php:512
+msgid "Nr of loads"
+msgstr "Laadimisi"
+
+#: ../lib/Module/Students.php:129
+msgid "Delete student"
+msgstr "Kustuta õpilane"
+
+#: ../lib/Module/Students.php:140
+msgid "There are no students in this form."
+msgstr "Selles klassis pole ühtegi õpilast."
+
+#: ../lib/Module/Teachers.php:61
+msgid ""
+"You are not authorized to add or edit teachers and school administrators."
+msgstr ""
+"Sul pole õigusi õpetajate ja kooliadministraatorite lisamiseks või "
+"muutmiseks."
+
+#: ../lib/Module/Teachers.php:66
+msgid "Teachers and schooladmins"
+msgstr "Õpetajad ja kooliadministraatorid"
+
+#: ../lib/Module/Teachers.php:72
+msgid "Add teacher"
+msgstr "Lisa õpetaja"
+
+#: ../lib/Module/Teachers.php:113
+msgid "List of all teachers and schooladmins in this school"
+msgstr "Nimekiri kõigist õpetajatest ja kooliadministraatoritest selles koolis"
+
+#: ../lib/Module/Teachers.php:118
+msgid "Nr of lessons"
+msgstr "Tunde"
+
+#: ../lib/Module/Teachers.php:137
+msgid "You can not delete youself!"
+msgstr "Sa ei saa iseennast kustutada!"
+
+#: ../lib/Module/Teachers.php:153 ../lib/Module/User.php:578
+msgid "School administrator"
+msgstr "Kooliadministraator"
+
+#: ../lib/Module/User.php:162
+msgid "The user you are trying to access does not exist."
+msgstr "Kasutajat, kellele soovite ligi pääseda, ei eksisteeri."
+
+#: ../lib/Module/User.php:174
+msgid "You can not access user of another school."
+msgstr "Sa ei saa vaadata teiste koolide kasutajaid."
+
+#: ../lib/Module/User.php:207
+msgid "You are not authorized to view information about other users."
+msgstr "Sul pole teiste kasutajate info vaatamiseks õigusi."
+
+#: ../lib/Module/User.php:221 ../lib/Module/User.php:233
+msgid "missing"
+msgstr "puudub"
+
+#: ../lib/Module/User.php:269
+msgid "You are not authorized to edit users."
+msgstr "Sul pole kasutajate muutmiseks õigusi."
+
+#: ../lib/Module/User.php:273
+msgid "Change user"
+msgstr "Muuda kasutajat"
+
+#: ../lib/Module/User.php:279
+msgid "User successfully modified."
+msgstr "Kasutaja edukalt muudetud."
+
+#: ../lib/Module/User.php:301
+msgid "You are not authorized to add users."
+msgstr "Sul pole kasutajate lisamiseks õigusi."
+
+#: ../lib/Module/User.php:304
+msgid "Add user"
+msgstr "Lisa kasutaja"
+
+#: ../lib/Module/User.php:310
+msgid "User successfully added."
+msgstr "Kasutaja edukalt lisatud."
+
+#: ../lib/Module/User.php:332
+msgid "You are not authorized to delete users."
+msgstr "Sul pole kasutajate kustutamiseks õigusi."
+
+#: ../lib/Module/User.php:337
+msgid "Deleting of user"
+msgstr "Kasutaja kustutamine"
+
+#: ../lib/Module/User.php:341
+msgid "User was successfully deleted."
+msgstr "Kasutaja edukalt kustutatud."
+
+#: ../lib/Module/User.php:362
+#, php-format
+msgid "Return to the school %s"
+msgstr "Tagasi kooli %s juurde"
+
+#: ../lib/Module/User.php:377
+#, php-format
+msgid "Return to the form %s"
+msgstr "Tagasi klassi %s juurde"
+
+#: ../lib/Module/User.php:382
+msgid "Return to the list of teachers and schooladmins"
+msgstr "Tagasi õpetajate ja kooliadministraatorite nimekirja juurde"
+
+#: ../lib/Module/User.php:392
+msgid "Return to the list of studens"
+msgstr "Tagasi õpilaste nimekirja juurde"
+
+#: ../lib/Module/User.php:395
+msgid "Return to the list of marks"
+msgstr "Tagasi hinnete lehele"
+
+#: ../lib/Module/User.php:398
+msgid "Return to the forum"
+msgstr "Tagasi foorumisse"
+
+#: ../lib/Module/User.php:401
+msgid "Return to the previous page"
+msgstr "Tagasi eelmisele lehele"
+
+#: ../lib/Module/User.php:580
+msgid "Student"
+msgstr "Õpilane"
+
+#: ../lib/Module/Course/Forum.php:130
+msgid "Forum"
+msgstr "Foorum"
+
+#: ../lib/Module/Course/Forum.php:143
+msgid "Course forum"
+msgstr "Kursuse foorum"
+
+#: ../lib/Module/Course/Forum.php:173
+msgid "Only teacher can delete forum posts and topics."
+msgstr "Foorumi teemasid ja postitusi saab kustutada vaid õpetaja."
+
+#: ../lib/Module/Course/Forum.php:215
+msgid "Add new topic"
+msgstr "Lisa uus teema"
+
+#: ../lib/Module/Course/Forum.php:269
+msgid "Selected forum topic does not exist."
+msgstr "Valitud foorumi teemat ei eksisteeri."
+
+#: ../lib/Module/Course/Forum.php:277
+msgid "Selected forum topic does not belong to this course."
+msgstr "Valitud foorumi teema ei kuulu sellele kursusele."
+
+#: ../lib/Module/Course/Forum.php:298
+msgid "Selected forum post does not exist."
+msgstr "Valitud foorumi postitust ei eksisteeri."
+
+#: ../lib/Module/Course/Forum.php:307
+msgid "Selected forum post does not belong to this course."
+msgstr "Valitud foorumi teema ei kuulu sellele kursusele."
+
+#: ../lib/Module/Course/Forum.php:340 ../lib/Module/Course/Forum.php:459
+#: ../lib/Module/Course/Forum.php:474
+msgid "Topic"
+msgstr "Teema"
+
+#: ../lib/Module/Course/Forum.php:341
+msgid "Nr of answers"
+msgstr "Vastuseid"
+
+#: ../lib/Module/Course/Forum.php:342
+msgid "First post"
+msgstr "Esimene postitus"
+
+#: ../lib/Module/Course/Forum.php:343
+msgid "Last post"
+msgstr "Viimane postitus"
+
+#: ../lib/Module/Course/Forum.php:346
+msgid "Delete topic"
+msgstr "Kustuta teema"
+
+#: ../lib/Module/Course/Forum.php:387
+msgid "This forum is empty. You can add new topic by using the form below."
+msgstr "See foorum on tühi. Kasuta allolevat vormi, et lisada uus teema."
+
+#: ../lib/Module/Course/Forum.php:450 ../lib/Module/Course/Forum.php:586
+msgid "Author"
+msgstr "Autor"
+
+#: ../lib/Module/Course/Forum.php:464
+msgid "You have to specify a title for the new topic."
+msgstr "Sa pead määrama uuele teemale pealkirja."
+
+#: ../lib/Module/Course/Forum.php:483 ../lib/Module/Course/Forum.php:587
+msgid "Message"
+msgstr "Sõnum"
+
+#: ../lib/Module/Course/Forum.php:488
+msgid "You have to add some content to the message."
+msgstr "Sa pead lisama sõnimile ka sisu."
+
+#: ../lib/Module/Course/Forum.php:495
+msgid "Post new topic"
+msgstr "Postita uus teema"
+
+#: ../lib/Module/Course/Forum.php:498 ../lib/Module/Course/Forum.php:530
+msgid "Add comment"
+msgstr "Lisa kommentaar"
+
+#: ../lib/Module/Course/Forum.php:535
+msgid "Forum topic"
+msgstr "Foorumi teema"
+
+#: ../lib/Module/Course/Forum.php:541
+msgid "Return to the list of forum topics"
+msgstr "Tagasi foorumi teemade juurde"
+
+#: ../lib/Module/Course/Forum.php:590
+msgid "Delete post"
+msgstr "Kustuta postitus"
+
+#: ../lib/Module/Course/Forum.php:697
+msgid "Delete post of %personname%"
+msgstr "Kustuta %personname% postitus"
+
+#: ../lib/Module/Course/Info.php:88
+msgid "Course info"
+msgstr "Kursuse info"
+
+#: ../lib/Module/Course/Info.php:101
+msgid "General information about course"
+msgstr "Üldine kursust puudutav info"
+
+#: ../lib/Module/Course/Info.php:145
+msgid "Course data has been successfully saved."
+msgstr "Kursuse andmed on edukalt salvestatud."
+
+#: ../lib/Module/Course/Info.php:159
+msgid "View as student"
+msgstr "Vaata õpilasena"
+
+#: ../lib/Module/Course/Info.php:203 ../lib/Module/Course/Info.php:280
+msgid "Course content"
+msgstr "Kursuse sisu"
+
+#: ../lib/Module/Course/Info.php:204 ../lib/Module/Course/Info.php:286
+msgid "Assessment"
+msgstr "Hindamine"
+
+#: ../lib/Module/Course/Info.php:205 ../lib/Module/Course/Info.php:292
+msgid "Books"
+msgstr "Õpikud"
+
+#: ../lib/Module/Course/Info.php:206 ../lib/Module/Course/Info.php:298
+msgid "Scheduled time"
+msgstr "Toimumisaeg"
+
+#: ../lib/Module/Course/Info.php:207 ../lib/Module/Course/Info.php:304
+msgid "Classroom"
+msgstr "Ruum"
+
+#: ../lib/Module/Course/Info.php:208 ../lib/Module/Course/Info.php:310
+msgid "Consultations"
+msgstr "Konsultatsioonid"
+
+#: ../lib/Module/Course/Info.php:223
+msgid "Return to course info editing"
+msgstr "Tagasi kursuse info muutmise juurde"
+
+#: ../lib/Module/Course/Info.php:321
+msgid "Restore"
+msgstr "Taasta algseis"
+
+#: ../lib/Module/Course/Info.php:326
+msgid "You are required to specify course name."
+msgstr "Kursuse nimi on kohustuslik."
+
+#: ../lib/Module/Course/Lessons.php:122
+msgid "Lessons of course"
+msgstr "Kursuse tunnid"
+
+#: ../lib/Module/Course/Lessons.php:137
+msgid "Only teacher of the course can add or remove lessons."
+msgstr "Tunde saab lisada ja eemaldada vaid õpetaja."
+
+#: ../lib/Module/Course/Lessons.php:147
+msgid "Selected lesson does not exist."
+msgstr "Valitud tund ei eksisteeri."
+
+#: ../lib/Module/Course/Lessons.php:155
+msgid "Selected lesson does not belong to this course."
+msgstr "Valitud tund ei kuulu sellele kursusele."
+
+#: ../lib/Module/Course/Lessons.php:193 ../lib/Module/Course/Lessons.php:402
+msgid "Date"
+msgstr "Kuupäev"
+
+#: ../lib/Module/Course/Lessons.php:194 ../lib/Module/Course/Lessons.php:409
+msgid "Lesson topics"
+msgstr "Tunni sisu"
+
+#: ../lib/Module/Course/Lessons.php:201
+msgid "Remove lesson"
+msgstr "Eemalda tund"
+
+#: ../lib/Module/Course/Lessons.php:204
+msgid "Mark"
+msgstr "Hinne"
+
+#: ../lib/Module/Course/Lessons.php:224 ../lib/Module/Course/Lessons.php:381
+msgid "Add lesson"
+msgstr "Lisa tund"
+
+#: ../lib/Module/Course/Lessons.php:233 ../lib/Module/Course/Marks.php:349
+msgid "Assessment marks are in bold face."
+msgstr "Arvestuslikud hinded on rasvases kirjas."
+
+#: ../lib/Module/Course/Lessons.php:241
+msgid "There are no lessons on this course."
+msgstr "Sellel kursusel pole ühtegi tundi."
+
+#: ../lib/Module/Course/Lessons.php:284
+msgid "Delete lesson"
+msgstr "Kustuta tund"
+
+#: ../lib/Module/Course/Lessons.php:359
+msgid "Return to the list of lessons"
+msgstr "Tagasi tundide nimekirja juurde"
+
+#: ../lib/Module/Course/Lessons.php:378
+msgid "Change lesson"
+msgstr "Muuda tundi"
+
+#: ../lib/Module/Course/Lessons.php:433
+msgid "Lesson topic field must not be left blank."
+msgstr "Tunni sisu kirjeldamine on kohustuslik."
+
+#: ../lib/Module/Course/Lessons.php:514
+msgid "Deleting lesson failed."
+msgstr "Tunni kustutamine ebaõnnestus."
+
+#: ../lib/Module/Course/Marks.php:115
+msgid "Course assessment"
+msgstr "Kursuse hindamine"
+
+#: ../lib/Module/Course/Marks.php:142
+msgid "You are not authorized to edit marks of this course."
+msgstr "Sul pole selle kursuse hinnete muutmiseks õigusi."
+
+#: ../lib/Module/Course/Marks.php:165
+msgid "Edit marks"
+msgstr "Muuda hindeid"
+
+#: ../lib/Module/Course/Marks.php:170
+msgid "Marks for lesson at %date%"
+msgstr "Hinded tunnile %date%"
+
+#: ../lib/Module/Course/Marks.php:194
+msgid "Return to marks page"
+msgstr "Tagasi hinnete lehele"
+
+#: ../lib/Module/Course/Marks.php:245
+msgid "Preliminary marks"
+msgstr "Arvestuslikud hinded"
+
+#: ../lib/Module/Course/Marks.php:329
+msgid "To assign marks, you need to add lessons and students to this course."
+msgstr ""
+"Hinnete lisamiseks pead kõigepealt lisama kursusele tunnid ja õpilased."
+
+#: ../lib/Module/Course/Marks.php:398
+msgid "Average mark"
+msgstr "Keskmine hinne"
+
+#: ../lib/Module/Course/Marks.php:431
+msgid "Editing"
+msgstr "Muutmine"
+
+#: ../lib/Module/Course/Marks.php:627 ../lib/Module/Course/Marks.php:632
+msgid "all lessons"
+msgstr "kõik tunnid"
+
+#: ../lib/Module/Course/Materials.php:143
+msgid "Materials"
+msgstr "Materjalid"
+
+#: ../lib/Module/Course/Materials.php:156
+#: ../lib/Module/Course/Materials.php:168
+msgid "Manage materials"
+msgstr "Materjalide haldamine"
+
+#: ../lib/Module/Course/Materials.php:182
+msgid "The selected material does not exist."
+msgstr "Materjali, mille valisite, ei eksisteeri."
+
+#: ../lib/Module/Course/Materials.php:188
+msgid "The selected material does not belong to this course."
+msgstr "Valitud materjal ei kuulu sellele kursusele."
+
+#: ../lib/Module/Course/Materials.php:265
+#: ../lib/Module/Course/Materials.php:990
+#: ../lib/Module/Course/Materials.php:1013
+msgid "Add file"
+msgstr "Lisa fail"
+
+#: ../lib/Module/Course/Materials.php:266
+#: ../lib/Module/Course/Materials.php:739
+#: ../lib/Module/Course/Materials.php:762
+msgid "Add link"
+msgstr "Lisa link"
+
+#: ../lib/Module/Course/Materials.php:267
+#: ../lib/Module/Course/Materials.php:828
+#: ../lib/Module/Course/Materials.php:851
+msgid "Add text"
+msgstr "Lisa tekst"
+
+#: ../lib/Module/Course/Materials.php:268
+#: ../lib/Module/Course/Materials.php:909
+#: ../lib/Module/Course/Materials.php:932
+msgid "Add embed"
+msgstr "Vistuta"
+
+#: ../lib/Module/Course/Materials.php:269
+#: ../lib/Module/Course/Materials.php:659
+#: ../lib/Module/Course/Materials.php:682
+msgid "Add folder"
+msgstr "Lisa kaust"
+
+#: ../lib/Module/Course/Materials.php:321
+msgid "File name"
+msgstr "Faili nimi"
+
+#: ../lib/Module/Course/Materials.php:322
+msgid "File type"
+msgstr "Failitüüp"
+
+#: ../lib/Module/Course/Materials.php:323
+msgid "Size"
+msgstr "Suurus"
+
+#: ../lib/Module/Course/Materials.php:327
+msgid "Delete material"
+msgstr "Kustuta materjal"
+
+#: ../lib/Module/Course/Materials.php:340
+msgid "Parent folder"
+msgstr "Ülemkaust"
+
+#: ../lib/Module/Course/Materials.php:352
+msgid ""
+"There are no materials on this course. To add new materials use the links "
+"below."
+msgstr ""
+"Sellel kursusel puuduvad materjalid. Materjalide lisamiseks kasuta "
+"allolevaid linke."
+
+#: ../lib/Module/Course/Materials.php:570
+msgid "You are not allowed to delete this material."
+msgstr "Sul pole selle materjali kustutamiseks õigusi."
+
+#: ../lib/Module/Course/Materials.php:575
+msgid "The deleting of material did not succeed."
+msgstr "Materjali kustutamine ebaõnnestus."
+
+#: ../lib/Module/Course/Materials.php:617
+msgid "Show material"
+msgstr "Vaata materjale"
+
+#: ../lib/Module/Course/Materials.php:621
+#: ../lib/Module/Course/Materials.php:684
+#: ../lib/Module/Course/Materials.php:764
+#: ../lib/Module/Course/Materials.php:853
+#: ../lib/Module/Course/Materials.php:934
+#: ../lib/Module/Course/Materials.php:1015
+#: ../lib/Module/Course/Materials.php:1112
+msgid "Return to the list of materials"
+msgstr "Tagasi materjalide lehele"
+
+#: ../lib/Module/Course/Materials.php:641
+msgid "Only teacher can add folders."
+msgstr "Kaustu saab lisada vaid õpetaja."
+
+#: ../lib/Module/Course/Materials.php:646
+msgid "You can only add folders inside folders."
+msgstr "Kaustu saab lisada vaid kaustade sisse."
+
+#: ../lib/Module/Course/Materials.php:719
+msgid "Only teacher can add links."
+msgstr "Linke saab lisada vaid õpetaja."
+
+#: ../lib/Module/Course/Materials.php:724
+msgid "You can only add links inside folders."
+msgstr "Linke saab lisada vaid kaustade sisse."
+
+#: ../lib/Module/Course/Materials.php:810
+msgid "Only teacher can upload text."
+msgstr "Teksti saab lisada vaid õpetaja."
+
+#: ../lib/Module/Course/Materials.php:815
+msgid "You can only add text inside folders."
+msgstr "Teksti saab lisada vaid kaustade sisse."
+
+#: ../lib/Module/Course/Materials.php:889
+msgid "Only teacher can add embed content."
+msgstr "Vistutada saab vaid õpetaja."
+
+#: ../lib/Module/Course/Materials.php:894
+msgid "You can only add embed content inside folders."
+msgstr "Vistutust saab lisada vaid kaustade sisse."
+
+#: ../lib/Module/Course/Materials.php:970
+msgid "Only teacher can upload files."
+msgstr "Faile saab lisada vaid õpetaja."
+
+#: ../lib/Module/Course/Materials.php:975
+msgid "You can only add files inside folders."
+msgstr "Faile saab lisada vaid kaustade sisse."
+
+#: ../lib/Module/Course/Materials.php:1080
+msgid "You are not allowed to edit this material."
+msgstr "Sul pole selle materjali muutmiseks õigusi."
+
+#: ../lib/Module/Course/Materials.php:1240
+msgid "Change file"
+msgstr "Muuda faili"
+
+#: ../lib/Module/Course/Materials.php:1241
+msgid "Change folder"
+msgstr "Muuda kausta"
+
+#: ../lib/Module/Course/Materials.php:1242
+msgid "Change link"
+msgstr "Muuda linki"
+
+#: ../lib/Module/Course/Materials.php:1243
+msgid "Change text"
+msgstr "Muuda teksti"
+
+#: ../lib/Module/Course/Materials.php:1244
+msgid "Change embed"
+msgstr "Muuda vistutust"
+
+#: ../lib/Module/Course/Students.php:125
+msgid "Students of course"
+msgstr "Kursuse õpilased"
+
+#: ../lib/Module/Course/Students.php:140
+msgid "Only teacher of the course can add or remove students."
+msgstr "Õpilasi saab lisada ja eemaldada vaid õpetaja."
+
+#: ../lib/Module/Course/Students.php:214 ../lib/Module/Course/Students.php:487
+msgid "Add students"
+msgstr "Lisa õpilasi"
+
+#: ../lib/Module/Course/Students.php:216
+msgid "Return to the list of students"
+msgstr "Tagasi õpilaste nimekirja juurde"
+
+#: ../lib/Module/Course/Students.php:252
+msgid "The selected form does not belong to this school."
+msgstr "Valitud klass ei kuulu sellesse kooli."
+
+#: ../lib/Module/Course/Students.php:282
+msgid "Show students"
+msgstr "Näita õpilasi"
+
+#: ../lib/Module/Course/Students.php:321
+msgid "Add students to course"
+msgstr "Lisa õpilased kursusele"
+
+#: ../lib/Module/Course/Students.php:327
+msgid "Select all students"
+msgstr "Vali kõik õpilased"
+
+#: ../lib/Module/Course/Students.php:437
+msgid "Selected student does not exist."
+msgstr "Valitud õpilast ei eksisteeri."
+
+#: ../lib/Module/Course/Students.php:444
+msgid "Selected student does not belong to this course."
+msgstr "Valitud õpilane ei kuulu sellele kursusele."
+
+#: ../lib/Module/Course/Students.php:511 ../lib/Module/Course/Students.php:522
+msgid "Last login"
+msgstr "Viimati kursusel"
+
+#: ../lib/Module/Course/Students.php:515
+msgid "Remove student"
+msgstr "Eemalda õpilane"
+
+#: ../lib/Module/Course/Students.php:531
+msgid "There are no students on this course."
+msgstr "Sellel kursusel pole ühtegi õpilast."
+
+#: ../lib/Module/Course/Students.php:661
+#, php-format
+msgid "Remove %s"
+msgstr "Eemalda %s"
+
+#: ../lib/HTML/QuickForm/Renderer/VIKO.php:86
+msgid "required"
+msgstr "kohustuslik"
+
+
+msgid "tasks"
+msgstr "Ülesanded"

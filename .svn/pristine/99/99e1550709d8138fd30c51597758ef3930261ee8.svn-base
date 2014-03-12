@@ -1,0 +1,366 @@
+<?php
+
+/**
+ * Contains the Module_Course_Info class
+ *
+ * PHP versions 4 and 5
+ *
+ * LICENSE: VIKO is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option)
+ * any later version.
+ *
+ * VIKO is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * VIKO; if not, write to the Free Software Foundation, Inc., 59 Temple Place,
+ * Suite 330, Boston, MA  02111-1307  USA
+ *
+ * @package    VIKO
+ * @author     Rene Saarsoo <nene@triin.net>
+ * @copyright  2001-2007 VIKO team and contributors
+ * @license    http://www.gnu.org/licenses/gpl.html  GPL 2.0
+ */
+
+require_once 'Module/Course.php';
+require_once 'HTML/QuickForm.php';
+require_once 'HTML/QuickForm/Renderer/VIKO.php';
+require_once 'HTML.php';
+require_once 'Text/Wiki/BBCode.php';
+
+/**
+ * Manages the viewing and editing of course info
+ *
+ * This module recognizes the following URI parameters:
+ *
+ * <ul>
+ * <li>/#course_id/course-info - editable page, if the user is teacher of the course,
+ * otherwise the same as next</li>
+ * <li>/#course_id/course-info/preview - static course info page
+ * (this is only needed for the teacher of the course,
+ * as others will only be able to see the static page anyway)</li>
+ * </ul>
+ */
+class Module_Course_Info extends Module_Course {
+
+    /**
+     * Should we force showing the preview
+     */
+    var $_preview = false;
+
+    /**
+     * Constructs new CourseInfo Module
+     */
+    function Module_Course_Info( $course, $parameters )
+    {
+        if ( isset($parameters[0]) && $parameters[0]=='preview' ) {
+            $this->_preview = true;
+        }
+        parent::Module_Course( $course, $parameters );
+    }
+
+
+    /**
+     * Returns the module identifier string
+     *
+     * @access public
+     * @static
+     * @return string Identificator of module
+     */
+    function getID()
+    {
+        return "course-info";
+    }
+
+
+    /**
+     * Returns the short name of the module, this is used in navigation menu.
+     *
+     * @access public
+     * @static
+     * @return string short name
+     */
+    function getName()
+    {
+        return _("Course info");
+    }
+
+
+    /**
+     * Returns short description of module
+     *
+     * @access public
+     * @static
+     * @return string module description
+     */
+    function getDescription()
+    {
+        return _("General information about course");
+    }
+
+
+    /**
+     * Returns CourseInfo page in HTML
+     *
+     * If the user who views this page is also a teacher of this course,
+     * then displays the page in edit-mode, otherwise allows no editing.
+     *
+     * @access public
+     * @return string HTML fragment
+     */
+    function toHTML()
+    {
+        $course_teacher = $this->_course->getTeacher();
+        if (
+            $course_teacher->getID() == $_SESSION['user']->getID() &&
+            !$this->_preview
+        ) {
+            return $this->_createEditableInfoPage();
+        }
+        else {
+            return $this->_createStaticInfoPage();
+        }
+    }
+
+
+    /**
+     * Displays course info as an editable form
+     *
+     * @access private
+     * @return string HTML fragment
+     */
+    function _createEditableInfoPage()
+    {
+        // create HTML form
+        $form = $this->_createForm();
+        // check form for user input
+        if ( $form->validate() ) {
+            // if data is entered correctly, save it
+            // and create a notice of successful save
+            $this->_saveForm( $form );
+            $html_save_success = HTML::p( HTML::notice(
+                _('Course data has been successfully saved.')
+            ) );
+        }
+        else {
+            $html_save_success = '';
+        }
+        // convert form to HTML
+        $html_form = HTML_QuickForm_Renderer_VIKO::render( $form );
+
+        $html_title = $this->title();
+
+        // link to show preview of the text
+        $html_preview =
+            HTML::p(
+                HTML::a( $this->relativeURI('preview'), _("View as student") )
+            );
+
+        // return HTML containing page title and form
+        return $html_title . $html_save_success . $html_form . $html_preview;
+    }
+
+
+    /**
+     * Displays course info in static format.
+     *
+     * Only displays info about the fields that are filled.
+     *
+     * @access private
+     * @return string HTML fragment
+     */
+    function _createStaticInfoPage()
+    {
+        // on preview change the menu item to be clickable link
+        if ( $this->_preview ) {
+            $this->_selected_menu_item_status='HIGHLIGHTED';
+        }
+
+        // format course info
+        $course_name    = $this->_course->getHTMLName();
+        $teacher = $this->_course->getTeacher();
+        $email_link = "";
+        if ( $teacher->getEmailLink() != "" ) {
+            $email_link = " (" . $teacher->getEmailLink() . ")";
+        }
+        $teacher_name = HTML::p(
+            $teacher->getFullName() . $email_link
+        );
+        $description    = $this->_course->getHTMLDescription();
+        $assessment     = $this->_course->getHTMLAssessment();
+        $books          = $this->_course->getHTMLBooks();
+        $scheduled_time = $this->_course->getHTMLScheduledTime();
+        $classroom      = $this->_course->getHTMLClassroom();
+        $consultation   = $this->_course->getHTMLConsultation();
+
+        $html_title = $this->title();
+
+        // translate labels
+        $teacher_label        = _("Teacher") . ":";
+        $description_label    = _("Course content") . ":";
+        $assessment_label     = _("Assessment") . ":";
+        $books_label          = _("Books") . ":";
+        $scheduled_time_label = _("Scheduled time") . ":";
+        $classroom_label      = _("Classroom") . ":";
+        $consultation_label   = _("Consultations") . ":";
+
+        // display only filled fields
+        $description_html = ( strlen($description) > 0 ) ? "<dt>$description_label</dt><dd>$description</dd>" : "";
+        $assessment_html = ( strlen($assessment) > 0 ) ? "<dt>$assessment_label</dt><dd>$assessment</dd>" : "";
+        $books_html = ( strlen($books) > 0 ) ? "<dt>$books_label</dt><dd>$books</dd>" : "";
+        $scheduled_time_html = ( strlen($scheduled_time) > 0 ) ? "<dt>$scheduled_time_label</dt><dd>$scheduled_time</dd>" : "";
+        $classroom_html = ( strlen($classroom) > 0 ) ? "<dt>$classroom_label</dt><dd>$classroom</dd>" : "";
+        $consultation_html = ( strlen($consultation) > 0 ) ? "<dt>$consultation_label</dt><dd>$consultation</dd>" : "";
+
+        // if this page is created by pressing "preview" link, then
+        // create a backlink to the edit page.
+        if ( $this->_preview ) {
+            $view_editable_page = HTML::backLink(
+                $this->relativeURI(),
+                _("Return to course info editing"),
+                STANDALONE
+            );
+        }
+        else {
+            $view_editable_page = "";
+        }
+
+        return <<<EOHTML
+$html_title
+
+<dl>
+<dt>$teacher_label</dt><dd>$teacher_name</dd>
+$description_html
+$assessment_html
+$books_html
+$scheduled_time_html
+$classroom_html
+$consultation_html
+</dl>
+$view_editable_page
+EOHTML;
+    }
+
+
+    /**
+     * Creates an HTML form for editing course info
+     *
+     * @access private
+     * @return Form new form object
+     */
+    function _createForm()
+    {
+        $form =& new HTML_QuickForm();
+
+        $form->addElement(
+            'text',
+            'course_name',
+            _('Course name') . ':',
+            array( 'class'=>'long-text', 'id'=>'course_name' )
+        );
+        $form->addElement(
+            'text',
+            'course_subname',
+            _('Form') . ':',
+            array( 'class'=>'short-text', 'id'=>'course_subname' )
+        );
+        $teacher = $this->_course->getTeacher();
+        $form->addElement(
+            'static',
+            'teacher',
+            _('Teacher') . ':',
+            $teacher->getFullName() . " (" . $teacher->getEmailLink() . ")"
+        );
+        $form->addElement(
+            'textarea',
+            'description',
+            _('Course content') . ':',
+            array( 'rows'=>'10', 'cols'=>'45', 'id'=>'description' )
+        );
+        $form->addElement(
+            'textarea',
+            'assessment',
+            _('Assessment') . ':',
+            array( 'rows'=>'6', 'cols'=>'45', 'id'=>'assessment' )
+        );
+        $form->addElement(
+            'textarea',
+            'books',
+            _('Books') . ':',
+            array( 'rows'=>'6', 'cols'=>'45', 'id'=>'books' )
+        );
+        $form->addElement(
+            'text',
+            'scheduled_time',
+            _('Scheduled time') . ':',
+            array( 'class'=>'long-text', 'id'=>'scheduled_time' )
+        );
+        $form->addElement(
+            'text',
+            'classroom',
+            _('Classroom') . ':',
+            array( 'class'=>'short-text', 'id'=>'classroom' )
+        );
+        $form->addElement(
+            'text',
+            'consultation',
+            _('Consultations') . ':',
+            array( 'class'=>'long-text', 'id'=>'consultation' )
+        );
+			
+        $form->addElement(
+            'submit',
+            'submit',
+            _('Save')
+        );
+        $form->addElement(
+            'reset',
+            'reset',
+            _('Restore')
+        );
+
+        $form->addRule(
+            'course_name',
+            _("You are required to specify course name."),
+            'required'
+        );
+
+        $form->setDefaults( array(
+            'course_name' => $this->_course->getName(),
+            'course_subname' => $this->_course->getSubName(),
+            'description' => $this->_course->getDescription(),
+            'assessment' => $this->_course->getAssessment(),
+            'books' => $this->_course->getBooks(),
+            'scheduled_time' => $this->_course->getScheduledTime(),
+            'classroom' => $this->_course->getClassroom(),
+            'consultation' => $this->_course->getConsultation()
+        ) );
+
+        return $form;
+    }
+
+
+    /**
+     * Saves the course info in submitted form
+     *
+     * @access private
+     */
+    function _saveForm( $form )
+    {
+        $this->_course->setName( $form->exportValue('course_name') );
+        $this->_course->setSubName( $form->exportValue('course_subname') );
+        $this->_course->setDescription( $form->exportValue('description') );
+        $this->_course->setAssessment( $form->exportValue('assessment') );
+        $this->_course->setBooks( $form->exportValue('books') );
+        $this->_course->setScheduledTime( $form->exportValue('scheduled_time') );
+        $this->_course->setClassroom( $form->exportValue('classroom') );
+        $this->_course->setConsultation( $form->exportValue('consultation') );
+        $this->_course->save();
+    }
+}
+
+
+?>

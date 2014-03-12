@@ -1,0 +1,4 @@
+#forum td.first-post,#forum td.last-post{text-align:center;font-size:smaller;}
+#forum td.nr-of-posts{text-align:center;}
+#forum tr.post-of-user{background-color:#b7dda6;}
+#forum tr.post-of-topic-author{background-color:#c0d5ea;}

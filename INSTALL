@@ -1,0 +1,180 @@
+System requirements
+===================
+
+ * Apache, with support for:
+   * .htaccess
+   * mod_rewrite
+ * PHP >= 4.1, with support for:
+   * GNU GetText
+   * register_globals = off *
+ * MySQL >= 4.1
+
+VIKO must be installed into a separate domain or subdomain, e.g. example.com,
+viko.example.com and localhost are fine, while www.example.com/viko/ and
+localhost/viko/ are not.
+
+* This isn't a hard requirement, but more of a recommendation. VIKO will
+probably work just fine with register_globals on, but VIKO doesn't make use of
+this setting, and for the sake of security, it's better just turned off. You can
+turn register_globals of in your php.ini, or when using a virtual server, ask
+your hosting provider how to turn this off. It is usually done by adding the
+following line to the .htaccess file of VIKO:
+
+ php_flag register_globals off
+
+
+Installation instructions
+=========================
+
+1. Unpack the source into a public directory in your webserver. The command:
+
+ tar -xvzf viko-2.1RC.tar.gz
+
+will create directory viko/, the contents of it well need to be moved into the
+public directory.
+
+The files of VIKO are devided as follows:
+
+* viko/css/ - stylesheets
+* viko/img/ - images
+* viko/js/ - JavaScript files
+* viko/locale/ - translations
+* viko/lib/ - VIKO-specific PHP source files
+* viko/PEAR/ - PEAR packages
+* viko/sql/ - database structure
+
+Directory sql/ and files INSTALL, LICENSE and CHANGELOG aren't needed in a
+production environment - you may delete them, if you want.
+
+Note that root directory of VIKO also contains .htaccess file, which might be
+hidden when you're running a UNIX system. This file definetly needed needed by
+VIKO.
+
+2. Create MySQL database. You may use a graphical interface like PhpMyAdmin or
+just a command line:
+
+ CREATE DATABASE viko;
+
+3. Create the database structure for VIKO. SQL code resides inside sql/viko.sql.
+Execute the code inside that file:
+
+ SOURCE sql/viko.sql;
+
+4. Create MySQL user that VIKO will use. The database user needs at minimum
+DELETE, INSERT, SELECT and UPDATE rights. For example:
+
+ GRANT DELETE,INSERT,SELECT,UPDATE
+ ON viko.*
+ TO 'vikouser'@'localhost'
+ IDENTIFIED BY 'vikopass';
+
+5. Open file viko/viko.conf and insert the database name, username and password
+into appropriate places:
+
+ database_name = viko
+ database_username = vikouser
+ database_password = vikopass
+
+Change other configuration setting in that file to conform with your needs.
+
+6. Remove file convert-viko-files.php - this is only needed when you are
+making a transition from older version of VIKO.
+
+7. Point your browser to the web address where you installed VIKO, a'la
+http://viko.example.com. When you log into VIKO for the first time, use
+username "admin" and password "admin". Don't forget to change this password,
+after you have logged in.
+
+
+Upgrading from VIKO 1.1.1 to VIKO 2.1RC
+=======================================
+
+Note: if you have VIKO version prior to 1.1.1 or 1.1, first upgrade to VIKO
+1.1.1 (you only need to upgrade the database as files will be deleted anyway
+when upgrading from 1.1.1 to 2.1RC). Users of VIKO 1.1 don't need to upgrade
+into VIKO 1.1.1 befor upgrading to 2.1RC.
+
+NB! Before upgading be sure you have made backup from your database and
+contents of files/ folder.
+
+1. Look up your database name, username and password from VIKO 1.1.1 file
+include/mysql_connect.php
+
+ grep '^$mysql_' include/mysql_connect.php
+
+2. Remove all the files and folders from VIKO directory except files/
+
+ rm -R .htaccess *.php admin/ css/ gif/ include/ opetaja/ sql/
+
+3. Untar viko-???.tar.gz and move the contents into the public directory of
+VIKO. Don't forget the .htaccess file:
+
+ tar -xzvf viko-2.0.1.tar.gz
+ mv viko-2.0.1/* public_html/
+ mv viko-2.0.1/.htaccess public_html/
+
+4. Change the database name, user and password settings in viko.conf. Be free to
+modify all the other settings in that file to suit your needs.
+
+5. Upgrade the database structure by running the SQL script sql/changes_2.1RC.sql
+
+ SOURCE sql/changes_2.1RC.sql;
+
+6. Point your browser to my.viko.server/convert-viko-files.php and follow the
+instructions it gives to load the files in files/ directory into database. When
+done, you can delete the files/ directory and also the script
+convert-viko-files.php itself. You may also remove the SQL scripts and files
+INSTALL, LICENSE and CHANGELOG:
+
+ rm -R files/ sql/ convert-viko-files.php INSTALL LICENSE CHANGELOG
+
+
+ 
+Transition from VIKO 2.0 RC1, RC2, RC3 or RC4 to VIKO 2.1
+===========================================================
+
+When upgrading from one of VIKO 2.0 release candidates, you need to make 4 steps:
+
+1. Replace the old files in you webserver with new ones.
+   The only file you probably don't want to overwrite is viko.conf.
+   But you should compare your old viko.conf with the new one - some old
+   configuration options might have been dropped, and some new might have
+   been added.
+
+2. This step is only neccessary if you upgraded to VIKO 2.0 RCx from VIKO 1.x
+   (e.g. you didn't made a clean install of VIKO 2.0 RCx).
+
+   Run the following SQL code in the database of VIKO:
+
+alter table Topics add FOREIGN KEY (course_id) REFERENCES Courses (course_id);
+alter table Posts add FOREIGN KEY (topic_id) REFERENCES Topics (topic_id);
+alter table Posts add FOREIGN KEY (user_id) REFERENCES Users (user_id);
+
+   This will create three previously missing indexes, speeding up some pages,
+   that were previously quite slow.
+
+3. Upgrade the database structure by running the SQL script sql/changes_2.0.sql
+	This will add some additional material types to the materials table, not used in previous versions.
+	
+4. Upgrade the database once more by running the SQL script sql/changes_2.1.sql. This will add some additional material types to the materials table, not used in 2.0 version.
+
+
+Upgrading from VIKO 2.0.* to VIKO 2.1
+=======================================
+
+1. Backup VIKO database and viko.conf file.
+
+2. Upgrade the database structure by running the SQL script sql/changes_2.1.sql
+
+3. Unzip viko-2.1.tar.gz and replace all VIKO files EXCEPT viko.conf
+
+4. Add the following lines to the end of viko.conf file:
+
+student_can_add_text = yes
+student_can_add_embed = yes
+
+These options mean that students are allowed to add text documents and embedded resources.
+You can change the default value to "no".
+
+5. Make sure that the school administrators have specified their e-mail addresses.
+Password reset e-mails will be sent from the schooladmin e-mail.

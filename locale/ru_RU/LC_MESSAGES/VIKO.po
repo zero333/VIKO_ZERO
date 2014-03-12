@@ -1,0 +1,1645 @@
+# Russian translations for VIKO package.
+# Copyright (C) 2006 VIKO team
+# This file is distributed under the same license as the VIKO package.
+# Pjotr Savitski <gnum@tlu.ee>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Kannel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-29 23:34+0300\n"
+"PO-Revision-Date: 2006-09-06 13:48+0200\n"
+"Last-Translator: Pjotr Savitski <gnum@tlu.ee>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../index.php:158
+#: ../index.php:224
+msgid "Log out"
+msgstr "Выход"
+
+#: ../index.php:158
+#: ../index.php:224
+msgid "Exit VIKO"
+msgstr "Покинуть VIKO"
+
+#: ../index.php:159
+#: ../index.php:225
+#: ../lib/Module/MyVIKO.php:82
+msgid "My VIKO"
+msgstr "Моя среда VIKO"
+
+#: ../index.php:159
+#: ../index.php:225
+msgid "Main page of VIKO"
+msgstr "Основная страница VIKO"
+
+#: ../index.php:204
+#: ../lib/HTML.php:233
+#: ../lib/Module.php:138
+msgid "Error!"
+msgstr "Ошибка!"
+
+#: ../index.php:205
+msgid "The course you are trying to access does not exist."
+msgstr "Вы пытаетесь попасть на несуществующий курс."
+
+#: ../index.php:213
+#: ../index.php:419
+msgid "Unauthorized access!"
+msgstr "Несанкционированный доступ!"
+
+#: ../index.php:214
+msgid "You are not a member of the course you are trying to access."
+msgstr "Вы не являетесь участником данного курса."
+
+#: ../index.php:421
+msgid "Either your session has expired or you are trying to access this page without authentication."
+msgstr "Ваша сессия закончилась или вы не ввели имени пользователя и пароля."
+
+#: ../index.php:423
+msgid "Please log in to VIKO and then try again."
+msgstr "Войдите в среду  VIKO и попробуйте снова."
+
+#: ../lib/Folder.php:79
+msgid "Folder"
+msgstr "Папка"
+
+#: ../lib/FormList.php:134
+#: ../lib/Module/Statistics.php:490
+msgid "Teachers"
+msgstr "Учителя"
+
+#: ../lib/FormList.php:135
+#: ../lib/Module/Statistics.php:263
+#: ../lib/Module/Statistics.php:488
+msgid "School administrators"
+msgstr "Школьные администраторы"
+
+#: ../lib/HTML.php:252
+#: ../lib/Module.php:160
+msgid "Access denied!"
+msgstr "Доступ запрещён!"
+
+#: ../lib/I18n.php:72
+#, php-format
+msgid "Unable to load file %s."
+msgstr "Невозможно загрузить файл  %s."
+
+#: ../lib/Link.php:111
+msgid "Link"
+msgstr "Ссылка"
+
+#: ../lib/MaterialForm.php:61
+msgid "File"
+msgstr "Файл"
+
+#: ../lib/MaterialForm.php:70
+msgid "You have to select the file, you want to upload."
+msgstr "Вы должны указать добавляемый файл."
+
+#: ../lib/MaterialForm.php:82
+#, php-format
+msgid "Files larger than %s are not allowed."
+msgstr "Размер файла не должен превышать %s."
+
+#: ../lib/MaterialForm.php:101
+msgid "New Filename"
+msgstr "Новое имя файла"
+
+#: ../lib/MaterialForm.php:108
+#, php-format
+msgid "Maximum %s characters allowed in file name."
+msgstr "Длина имени файла не должна превышать %s символов."
+
+#: ../lib/MaterialForm.php:132
+msgid "Folder name"
+msgstr "Имя папки"
+
+#: ../lib/MaterialForm.php:139
+msgid "Each folder must have name."
+msgstr "Каждая папка должна иметь название."
+
+#: ../lib/MaterialForm.php:146
+#, php-format
+msgid "Maximum %s characters allowed in folder name."
+msgstr "Длина имени папки не должна превышать %s символов."
+
+#: ../lib/MaterialForm.php:170
+msgid "Link name"
+msgstr "Имя ссылки"
+
+#: ../lib/MaterialForm.php:177
+#, php-format
+msgid "Maximum %s characters allowed in link name."
+msgstr "Длина имени ссылки не должна превышать %s символов."
+
+#: ../lib/MaterialForm.php:201
+msgid "Description"
+msgstr "Описание"
+
+#: ../lib/MaterialForm.php:208
+#, php-format
+msgid "Maximum %s characters allowed in description."
+msgstr "Длина описания не должна превышать %s символов."
+
+#: ../lib/MaterialForm.php:232
+msgid "Web address"
+msgstr "Интернет адрес"
+
+#: ../lib/MaterialForm.php:239
+msgid "You have to specify the address of the link you want to add."
+msgstr "Вы должны указать адрес добавляемой ссылки."
+
+#: ../lib/MaterialForm.php:246
+#, php-format
+msgid "Maximum %s characters allowed in address."
+msgstr "Длина адреса не должна превышать %s символов."
+
+#: ../lib/MimeType.php:162
+msgid "Image file"
+msgstr "Картинка"
+
+#: ../lib/MimeType.php:165
+msgid "Audio file"
+msgstr "Аудио файл"
+
+#: ../lib/MimeType.php:168
+msgid "Video file"
+msgstr "Видео файл"
+
+#: ../lib/MimeType.php:171
+msgid "Text document"
+msgstr "Текстовый документ"
+
+#: ../lib/MimeType.php:174
+msgid "PDF document"
+msgstr "Документ PDF"
+
+#: ../lib/MimeType.php:177
+msgid "Presentation"
+msgstr "Презентация"
+
+#: ../lib/MimeType.php:180
+msgid "Spreadsheet"
+msgstr "Таблица"
+
+#: ../lib/MimeType.php:183
+msgid "Archive"
+msgstr "Архив"
+
+#: ../lib/MimeType.php:186
+msgid "Text file"
+msgstr "Текстовый файл"
+
+#: ../lib/MimeType.php:189
+msgid "Web page"
+msgstr "Интернет страница"
+
+#: ../lib/VIKO.php:95
+#: ../lib/VIKO.php:113
+msgid "learning environment"
+msgstr "учебная среда"
+
+#: ../lib/VIKO.php:115
+msgid "student environment"
+msgstr "среда ученика"
+
+#: ../lib/VIKO.php:117
+msgid "teacher environment"
+msgstr "среда учителя"
+
+#: ../lib/VIKO.php:119
+msgid "school administrator environment"
+msgstr "среда школьного администратора"
+
+#: ../lib/VIKO.php:121
+msgid "administrator environment"
+msgstr "среда администратора"
+
+#: ../lib/VIKO.php:332
+msgid "Tallinn University %year1%-%year2%"
+msgstr "Таллиннский Университет %year1%-%year2%"
+
+#: ../lib/Module/ChangePassword.php:60
+#: ../lib/Module/MyVIKO.php:326
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: ../lib/Module/ChangePassword.php:71
+msgid "Password updated successfully."
+msgstr "Пароль успешно обновлён."
+
+#: ../lib/Module/ChangePassword.php:79
+#: ../lib/Module/ChangeUserinfo.php:78
+#: ../lib/Module/CourseAdd.php:82
+#: ../lib/Module/Forms.php:123
+#: ../lib/Module/Hometasks.php:82
+#: ../lib/Module/Statistics.php:120
+#: ../lib/Module/Statistics.php:284
+#: ../lib/Module/Teachers.php:71
+msgid "Return to the main page"
+msgstr "Вернуться на основную страницу"
+
+#: ../lib/Module/ChangePassword.php:112
+#: ../lib/Module/ChangeUserinfo.php:132
+#: ../lib/Module/ForgotPassword.php:110
+#: ../lib/Module/Login.php:127
+#: ../lib/Module/Login.php:188
+#: ../lib/Module/Register.php:408
+#: ../lib/Module/User.php:500
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: ../lib/Module/ChangePassword.php:118
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: ../lib/Module/ChangePassword.php:124
+msgid "New password"
+msgstr "Новый пароль"
+
+#: ../lib/Module/ChangePassword.php:130
+#: ../lib/Module/Register.php:513
+#: ../lib/Module/User.php:677
+msgid "Repeat password"
+msgstr "Повторить пароль"
+
+#: ../lib/Module/ChangePassword.php:136
+#: ../lib/Module/ChangeUserinfo.php:160
+#: ../lib/Module/Form.php:228
+#: ../lib/Module/School.php:265
+#: ../lib/Module/User.php:435
+#: ../lib/Module/Course/Info.php:316
+#: ../lib/Module/Course/Marks.php:253
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../lib/Module/ChangePassword.php:141
+#: ../lib/Module/ChangePassword.php:146
+#: ../lib/Module/ChangePassword.php:151
+#: ../lib/Module/CourseAdd.php:128
+#: ../lib/Module/Form.php:236
+#: ../lib/Module/Register.php:520
+#: ../lib/Module/Register.php:525
+#: ../lib/Module/School.php:273
+#: ../lib/Module/User.php:685
+#: ../lib/Module/User.php:690
+msgid "This field is required"
+msgstr "Необходимое поле"
+
+#: ../lib/Module/ChangePassword.php:160
+msgid "The old password is incorrect"
+msgstr "Неверный старый пароль"
+
+#: ../lib/Module/ChangePassword.php:167
+#: ../lib/Module/Register.php:532
+#: ../lib/Module/User.php:698
+msgid "The passwords do not match."
+msgstr "Пароли не совпадают."
+
+#: ../lib/Module/ChangePassword.php:174
+#: ../lib/Module/Register.php:539
+#: ../lib/Module/User.php:705
+msgid "Password must be at least 5 characters long."
+msgstr "Пароль должен быть не менее 5 символов."
+
+#: ../lib/Module/ChangePassword.php:182
+#: ../lib/Module/Register.php:547
+#: ../lib/Module/User.php:713
+msgid "Password may only contain characters from the ASCII range."
+msgstr "Пароль может содержать только ASCII символы."
+
+#: ../lib/Module/ChangeUserinfo.php:59
+#: ../lib/Module/MyVIKO.php:325
+msgid "Change userinfo"
+msgstr "Изменение информации пользователя"
+
+#: ../lib/Module/ChangeUserinfo.php:71
+msgid "Userinfo updated successfully."
+msgstr "Информация пользователя успешно изменена."
+
+#: ../lib/Module/ChangeUserinfo.php:131
+#: ../lib/Module/Statistics.php:346
+#: ../lib/Module/Teachers.php:115
+#: ../lib/Module/User.php:240
+msgid "Name"
+msgstr "Имя"
+
+#: ../lib/Module/ChangeUserinfo.php:137
+#: ../lib/Module/Register.php:161
+#: ../lib/Module/Register.php:471
+#: ../lib/Module/User.php:246
+#: ../lib/Module/User.php:615
+msgid "School"
+msgstr "Школа"
+
+#: ../lib/Module/ChangeUserinfo.php:143
+#: ../lib/Module/Forms.php:197
+#: ../lib/Module/Register.php:489
+#: ../lib/Module/User.php:243
+#: ../lib/Module/User.php:637
+#: ../lib/Module/Course/Info.php:267
+#: ../lib/Module/Course/Students.php:274
+msgid "Form"
+msgstr "Класс"
+
+#: ../lib/Module/ChangeUserinfo.php:159
+#: ../lib/Module/User.php:249
+msgid "e-mail"
+msgstr "е-почта"
+
+#: ../lib/Module/ChangeUserinfo.php:164
+#: ../lib/Module/Register.php:452
+#: ../lib/Module/User.php:553
+msgid "This is not a correct e-mail address."
+msgstr "Указанный адрес е-почты некорректен."
+
+#: ../lib/Module/CourseAdd.php:62
+msgid "You are not authorized to add courses."
+msgstr "Вы не можете добавлять курсы."
+
+#: ../lib/Module/CourseAdd.php:76
+msgid "Add new course"
+msgstr "Добавить новый курс"
+
+#: ../lib/Module/CourseAdd.php:123
+#: ../lib/Module/Hometasks.php:130
+#: ../lib/Module/MyVIKO.php:116
+#: ../lib/Module/MyVIKO.php:185
+#: ../lib/Module/Statistics.php:526
+#: ../lib/Module/Course/Info.php:261
+msgid "Course name"
+msgstr "Название курса"
+
+#: ../lib/Module/CourseAdd.php:124
+#: ../lib/Module/MyVIKO.php:152
+msgid "Add course"
+msgstr "Добавить курс"
+
+#: ../lib/Module/CourseAdd.php:133
+msgid "Course name may not only consist of spaces."
+msgstr "Название курса не может состоять из одних пробелов."
+
+#: ../lib/Module/CourseDelete.php:106
+msgid "You are not authorized to delete courses."
+msgstr "Вы не можете удалять курсы."
+
+#: ../lib/Module/CourseDelete.php:111
+msgid "The selected course does not exist."
+msgstr "Выбранный курс не существует."
+
+#: ../lib/Module/CourseDelete.php:117
+msgid "You are not authorized to delete this course."
+msgstr "Вы не можете удалить данный курс."
+
+#: ../lib/Module/CourseDelete.php:136
+#, php-format
+msgid "Are you really sure you want to delete the course %s?"
+msgstr "Вы уверены, что хотите удалить курс %s?"
+
+#: ../lib/Module/CourseDelete.php:142
+#, php-format
+msgid "There is %d student on this course."
+msgid_plural "There are %d students on this course."
+msgstr[0] "На данном курсе %d ученик."
+msgstr[1] "На данном курсе %d ученика."
+msgstr[2] "На данном курсе %d учеников."
+
+#: ../lib/Module/CourseDelete.php:152
+msgid "Yes, please remove this course."
+msgstr "Да, пожалуйста, удалите данный курс."
+
+#: ../lib/Module/ForgotPassword.php:79
+#: ../lib/Module/Login.php:100
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+#: ../lib/Module/ForgotPassword.php:82
+msgid ""
+"Enter your username and we send a new password to your e-mail address\n"
+"(specified in your profile). If your profile does not contain e-mail\n"
+"address, the school administrator of VIKO is notified about this lost\n"
+"password."
+msgstr ""
+"Введите ваше имя пользователя, и на адрес вашей е-почты\n"
+"(указанный в вашем профиле) будет послан новый пароль.\n"
+"Если ваш профиль не содержит адреса е-почты,\n"
+"то об этом потерянном пароле будет уведомлён школьный\n"
+"администратор  VIKO."
+
+#: ../lib/Module/ForgotPassword.php:91
+#: ../lib/Module/Register.php:141
+#: ../lib/Module/Register.php:289
+#: ../lib/Module/Register.php:304
+msgid "Return to the front page of VIKO"
+msgstr "Вернуться на главную страницу VIKO"
+
+#: ../lib/Module/ForgotPassword.php:118
+#: ../lib/Module/ForgotPassword.php:201
+msgid "No user exists with specified username."
+msgstr "Пользователя с таким именем не существует."
+
+#: ../lib/Module/ForgotPassword.php:126
+msgid "This username belongs to administrator or school administrator. Only students and teachers can use this form for retrieving new password."
+msgstr "Указанное имя пользователя принадлежит администратору или школьному администратору. Только ученики и учителя могут использовать данную форму в случае потери своего пароля."
+
+#: ../lib/Module/ForgotPassword.php:133
+msgid "Ask for new password"
+msgstr "Запросить новый пароль"
+
+#: ../lib/Module/ForgotPassword.php:236
+msgid "Unable to change password of specified user."
+msgstr "Невозможно изменить пароль указанного пользователя."
+
+#: ../lib/Module/ForgotPassword.php:243
+msgid "Password successfully changed!"
+msgstr "Пароль успешно изменён!"
+
+#: ../lib/Module/ForgotPassword.php:245
+msgid "New password has been generated and sent to your e-mail address. Check your mailbox for your new VIKO password."
+msgstr "Новый пароль был создан и послан вам на указанный адрес электронной почты. Проверьте ваш почтовый ящик на наличие письма с новым паролем."
+
+#: ../lib/Module/ForgotPassword.php:250
+msgid "Failed sending password with e-mail."
+msgstr "Не удалось отослать письмо с паролем."
+
+#: ../lib/Module/ForgotPassword.php:269
+msgid "There are no school administrators in your school."
+msgstr "В вашей школе нет ни одного администратора."
+
+#: ../lib/Module/ForgotPassword.php:277
+msgid "The school administrator of your school has no e-mail address specified."
+msgstr "Администратор вашей школы не указал своего адреса электронной почты."
+
+#: ../lib/Module/ForgotPassword.php:285
+msgid "School administrator has been notified"
+msgstr "Школьный администратор был оповещён"
+
+#: ../lib/Module/ForgotPassword.php:287
+msgid "A message has been sent to school administrator, telling that you have lost your password."
+msgstr "Письмо с сообщением о потере вами пароля было отослано школьному администратору."
+
+#: ../lib/Module/ForgotPassword.php:292
+msgid "Failed sending e-mail to school administrator."
+msgstr "Не удалось отослать письмо школьному администратору."
+
+#: ../lib/Module/ForgotPassword.php:358
+#: ../lib/Module/ForgotPassword.php:398
+msgid "VIKO Support"
+msgstr "Поддержка VIKO"
+
+#: ../lib/Module/ForgotPassword.php:362
+msgid "VIKO: Password change"
+msgstr "VIKO: Изменение пароля"
+
+#: ../lib/Module/ForgotPassword.php:403
+#, php-format
+msgid "VIKO: User %s forgot password"
+msgstr "VIKO: Пользователь %s забыл свой пароль"
+
+#: ../lib/Module/Form.php:108
+#: ../lib/Module/Forms.php:90
+msgid "You are not authorized to add or edit forms."
+msgstr "У вас нет привилегий для добавления или изменения классов."
+
+#: ../lib/Module/Form.php:115
+msgid "The form you are trying to edit does not exist."
+msgstr "Класс, который вы хотите изменить, не существует."
+
+#: ../lib/Module/Form.php:150
+msgid "Add new form"
+msgstr "Добавить новый класс"
+
+#: ../lib/Module/Form.php:156
+#: ../lib/Module/Form.php:188
+#: ../lib/Module/Students.php:106
+msgid "Return to the list of forms"
+msgstr "Обратно к списку классов"
+
+#: ../lib/Module/Form.php:182
+#: ../lib/Module/Forms.php:198
+msgid "Change form name"
+msgstr "Изменить имя класса"
+
+#: ../lib/Module/Form.php:223
+#: ../lib/Module/MyVIKO.php:117
+#: ../lib/Module/Course/Students.php:510
+#: ../lib/Module/Course/Students.php:521
+msgid "Form name"
+msgstr "Имя класса"
+
+#: ../lib/Module/Form.php:231
+#: ../lib/Module/Forms.php:124
+msgid "Add form"
+msgstr "Добавить класс"
+
+#: ../lib/Module/Form.php:241
+msgid "Form name may not only consist of spaces."
+msgstr "Имя класса не может состоять из одних пробелов."
+
+#: ../lib/Module/Form.php:248
+#: ../lib/Module/School.php:285
+msgid "This name is already in use - please choose another."
+msgstr "Указанное имя уже используется - пожалуйста, выберите другое."
+
+#: ../lib/Module/Forms.php:96
+#: ../lib/Module/Students.php:89
+#: ../lib/Module/Course/Students.php:243
+msgid "The selected form does not exist."
+msgstr "Такого класса не существует."
+
+#: ../lib/Module/Forms.php:103
+msgid "You are not authorized to delete this form."
+msgstr "У вас нет прав для удаления данного класса."
+
+#: ../lib/Module/Forms.php:111
+#: ../lib/Module/Forms.php:120
+#: ../lib/Module/Statistics.php:399
+msgid "Forms"
+msgstr "Классы"
+
+#: ../lib/Module/Forms.php:141
+#, php-format
+msgid "Form %s was successfully deleted."
+msgstr "Класс %s успешно удалён."
+
+#: ../lib/Module/Forms.php:164
+#, php-format
+msgid "Are you sure you want to delete form %s?"
+msgstr "Вы уверены, что хотите удалить класс %s?"
+
+#: ../lib/Module/Forms.php:170
+#, php-format
+msgid "There is %d student in this form. This student will be also deleted."
+msgid_plural "There are %d students in this form. All these students will be also deleted."
+msgstr[0] "В данном классе %d ученик. Этот ученик тоже будет удалён."
+msgstr[1] "В данном классе %d ученика. Эти ученики тоже будут удалены."
+msgstr[2] "В данном классе %d учеников. Эти ученики тоже будут удалены."
+
+#: ../lib/Module/Forms.php:180
+msgid "Yes, please delete this form."
+msgstr "Да, пожалуйста, удалите данный класс."
+
+#: ../lib/Module/Forms.php:195
+msgid "List of all forms in this school"
+msgstr "Список всех классов в указанной школе"
+
+#: ../lib/Module/Forms.php:199
+#: ../lib/Module/MyVIKO.php:118
+#: ../lib/Module/Statistics.php:148
+#: ../lib/Module/Statistics.php:527
+msgid "Nr of students"
+msgstr "Учеников"
+
+#: ../lib/Module/Forms.php:200
+msgid "Delete form"
+msgstr "Удалить класс"
+
+#: ../lib/Module/Forms.php:208
+msgid "There are no forms in this school."
+msgstr "В указанной школе нет ни одного класса."
+
+#: ../lib/Module/Forms.php:220
+#: ../lib/Module/MyVIKO.php:132
+#: ../lib/Module/Statistics.php:167
+#: ../lib/Module/Statistics.php:358
+#: ../lib/Module/Students.php:155
+#: ../lib/Module/Teachers.php:140
+#: ../lib/Module/Course/Forum.php:426
+#: ../lib/Module/Course/Materials.php:307
+#, php-format
+msgid "Delete %s"
+msgstr "Удалить %s"
+
+#: ../lib/Module/Forms.php:228
+#: ../lib/Module/Course/Lessons.php:200
+#: ../lib/Module/Course/Lessons.php:274
+#: ../lib/Module/Course/Marks.php:438
+#: ../lib/Module/Course/Materials.php:274
+#: ../lib/Module/Course/Materials.php:320
+msgid "Edit"
+msgstr "Изменить"
+
+#: ../lib/Module/Forms.php:242
+#: ../lib/Module/Statistics.php:228
+#: ../lib/Module/Statistics.php:505
+#: ../lib/Module/Statistics.php:618
+#: ../lib/Module/Students.php:178
+#: ../lib/Module/Teachers.php:195
+#: ../lib/Module/Course/Materials.php:351
+msgid "Total"
+msgstr "Всего"
+
+#: ../lib/Module/Hometasks.php:63
+#: ../lib/Module/MyVIKO.php:204
+msgid "Hometasks"
+msgstr "Домашние работы"
+
+#: ../lib/Module/Hometasks.php:70
+msgid "Past hometasks (not older than two weeks):"
+msgstr "Предыдущие домашние работы (не старше двух недель):"
+
+#: ../lib/Module/Hometasks.php:74
+msgid "Future hometasks:"
+msgstr "Будущие домашние работы:"
+
+#: ../lib/Module/Hometasks.php:79
+msgid "There are no hometasks in near past or in future."
+msgstr "Домашние работы отсутствуют."
+
+#: ../lib/Module/Hometasks.php:129
+#: ../lib/Module/Course/Lessons.php:196
+#: ../lib/Module/Course/Lessons.php:409
+msgid "Term"
+msgstr "Срок"
+
+#: ../lib/Module/Hometasks.php:131
+#: ../lib/Module/Course/Lessons.php:195
+#: ../lib/Module/Course/Lessons.php:403
+msgid "Hometask"
+msgstr "Домашняя работа"
+
+#: ../lib/Module/Login.php:73
+msgid "VIKO learning environment"
+msgstr "Учебная среда VIKO"
+
+#: ../lib/Module/Login.php:97
+msgid "Log in"
+msgstr "Войти"
+
+#: ../lib/Module/Login.php:99
+msgid "Register as a new user."
+msgstr "Зарегистрировать пользователя."
+
+#: ../lib/Module/Login.php:128
+#: ../lib/Module/Login.php:189
+#: ../lib/Module/Register.php:507
+#: ../lib/Module/User.php:671
+msgid "Password"
+msgstr "Пароль"
+
+#: ../lib/Module/Login.php:129
+#: ../lib/Module/Login.php:190
+msgid "Get in"
+msgstr "Войти"
+
+#: ../lib/Module/Login.php:170
+msgid "Login Failed!"
+msgstr "Войти не удалось!"
+
+#: ../lib/Module/Login.php:171
+msgid "Either the username or password you entered was wrong."
+msgstr "Неверное имя пользователя или пароль."
+
+#: ../lib/Module/Login.php:172
+msgid "Try again."
+msgstr "Попробуйте снова."
+
+#: ../lib/Module/MyVIKO.php:85
+#: ../lib/Module/User.php:238
+msgid "User"
+msgstr "Пользователь"
+
+#: ../lib/Module/MyVIKO.php:106
+#: ../lib/Module/MyVIKO.php:180
+#: ../lib/Module/Statistics.php:273
+#: ../lib/Module/Statistics.php:416
+msgid "Courses"
+msgstr "Курсы"
+
+#: ../lib/Module/MyVIKO.php:119
+msgid "Delete course"
+msgstr "Удалить курс"
+
+#: ../lib/Module/MyVIKO.php:186
+#: ../lib/Module/Teachers.php:150
+#: ../lib/Module/User.php:579
+#: ../lib/Module/Course/Info.php:202
+#: ../lib/Module/Course/Info.php:274
+msgid "Teacher"
+msgstr "Учитель"
+
+#: ../lib/Module/MyVIKO.php:187
+#: ../lib/Module/Course/Marks.php:102
+#: ../lib/Module/Course/Marks.php:397
+msgid "Marks"
+msgstr "Оценки"
+
+#: ../lib/Module/MyVIKO.php:292
+msgid "VIKO administration"
+msgstr "Администрирование VIKO"
+
+#: ../lib/Module/MyVIKO.php:293
+#: ../lib/Module/Statistics.php:115
+msgid "VIKO server statistics"
+msgstr "Статистика сервера VIKO"
+
+#: ../lib/Module/MyVIKO.php:296
+msgid "School administration"
+msgstr "Администрирование школы"
+
+#: ../lib/Module/MyVIKO.php:299
+#: ../lib/Module/Statistics.php:259
+msgid "School statistics"
+msgstr "Статистика школы"
+
+#: ../lib/Module/MyVIKO.php:300
+msgid "Teachers and school administrators"
+msgstr "Учителя и школьные администраторы"
+
+#: ../lib/Module/MyVIKO.php:301
+msgid "Forms and students"
+msgstr "Классы и ученики"
+
+#: ../lib/Module/MyVIKO.php:323
+msgid "Settings"
+msgstr "Настройки"
+
+#: ../lib/Module/MyVIKO.php:343
+msgid "Help"
+msgstr "Помощь"
+
+#: ../lib/Module/MyVIKO.php:344
+msgid "Teacher support system"
+msgstr "Система поддержки учителей"
+
+#: ../lib/Module/Register.php:85
+msgid "The school you have chosen does not exist."
+msgstr "Выбранная вами школа не существует."
+
+#: ../lib/Module/Register.php:112
+msgid "Registration of students has been disabled."
+msgstr "Регистрация для учеников запрещена."
+
+#: ../lib/Module/Register.php:119
+msgid "There are no schools in VIKO to choose form."
+msgstr "В VIKO нет ни одной школы."
+
+#: ../lib/Module/Register.php:139
+msgid "User registration: select school"
+msgstr "Регистрация пользователя: выбор школы"
+
+#: ../lib/Module/Register.php:169
+msgid "Choose"
+msgstr "Выбрать"
+
+#: ../lib/Module/Register.php:280
+msgid "User registration: student data"
+msgstr "Регистрация пользователя: данные ученика"
+
+#: ../lib/Module/Register.php:286
+msgid "Registration successful!"
+msgstr "Успешная регистрация!"
+
+#: ../lib/Module/Register.php:287
+msgid "You have successfully registered as new VIKO user."
+msgstr "Вы успешно зарегистрировались в качестве нового пользователя  VIKO."
+
+#: ../lib/Module/Register.php:288
+msgid "You may now go to the front page of VIKO and log in."
+msgstr "Теперь вы можете перейти на главную страницу VIKO и войти."
+
+#: ../lib/Module/Register.php:297
+msgid "Sorry, but registering your account failed. Please try again, maybe it succeeds this time."
+msgstr "Извините, но регистрация не удалась. Пожалуйста, попытайтесь снова. Может быть, на этот раз всё удастся."
+
+#: ../lib/Module/Register.php:355
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: ../lib/Module/Register.php:373
+#: ../lib/Module/User.php:456
+msgid "Firstname"
+msgstr "Имя"
+
+#: ../lib/Module/Register.php:379
+#: ../lib/Module/User.php:462
+msgid "Lastname"
+msgstr "Фамилия"
+
+#: ../lib/Module/Register.php:386
+#: ../lib/Module/User.php:469
+msgid "Every person must have a first name."
+msgstr "У каждого человека должно быть имя."
+
+#: ../lib/Module/Register.php:391
+#: ../lib/Module/User.php:474
+msgid "Every person must have a last name."
+msgstr "У каждого человека должна быть фамилия."
+
+#: ../lib/Module/Register.php:416
+#: ../lib/Module/User.php:508
+msgid "All users need a username."
+msgstr "У всех пользователей должно быть имя пользователя."
+
+#: ../lib/Module/Register.php:421
+#: ../lib/Module/User.php:513
+msgid "Username may only consist of characters a-z, A-Z, 0-9, _ and -."
+msgstr "Имя пользователя может состоять из символов а-я, А-Я, 0-9, _ и -."
+
+#: ../lib/Module/Register.php:428
+#: ../lib/Module/User.php:520
+msgid "This username is already in use - choose another."
+msgstr "Данное имя пользователя уже используется - выберите другое."
+
+#: ../lib/Module/Register.php:445
+#: ../lib/Module/User.php:546
+msgid "E-mail"
+msgstr "Е-почта"
+
+#: ../lib/Module/School.php:118
+msgid "You are not authorized to add, edit or delete schools."
+msgstr "Вы не имеете привилегий для добавления, изменения и удаления школ."
+
+#: ../lib/Module/School.php:124
+#: ../lib/Module/Statistics.php:95
+msgid "The school you are trying to access does not exist."
+msgstr "Запрошенной вами школы не существует."
+
+#: ../lib/Module/School.php:152
+#: ../lib/Module/School.php:268
+#: ../lib/Module/Statistics.php:121
+msgid "Add school"
+msgstr "Добавить школу"
+
+#: ../lib/Module/School.php:159
+msgid "School successfully added."
+msgstr "Школа успешно добавлена."
+
+#: ../lib/Module/School.php:167
+#: ../lib/Module/School.php:199
+#: ../lib/Module/School.php:241
+#: ../lib/Module/Statistics.php:279
+msgid "Return to the list of all schools"
+msgstr "Обратно к списку школ"
+
+#: ../lib/Module/School.php:184
+#: ../lib/Module/Statistics.php:280
+msgid "Change school name"
+msgstr "Изменить название школы"
+
+#: ../lib/Module/School.php:191
+msgid "School name successfully changed."
+msgstr "Название школы успешно изменено."
+
+#: ../lib/Module/School.php:225
+#: ../lib/Module/Statistics.php:151
+msgid "Delete school"
+msgstr "Удалить школу"
+
+#: ../lib/Module/School.php:231
+msgid "School successfully deleted."
+msgstr "Школа успешно удалена."
+
+#: ../lib/Module/School.php:234
+#, php-format
+msgid "Are you sure you want to delete school %s?"
+msgstr "Вы уверены, что хотите удалить школу %s?"
+
+#: ../lib/Module/School.php:237
+msgid "Yes, please delete this school."
+msgstr "Да, пожалуйста, удалите указанную школу."
+
+#: ../lib/Module/School.php:260
+#: ../lib/Module/Statistics.php:146
+msgid "School name"
+msgstr "Название школы"
+
+#: ../lib/Module/School.php:278
+msgid "School name may not only consist of spaces."
+msgstr "Название школы не может состоять из одних пробелов."
+
+#: ../lib/Module/Statistics.php:90
+msgid "You are not authorized to access school statistics."
+msgstr "У вас нет привилегий для просмотра школьной статистики."
+
+#: ../lib/Module/Statistics.php:141
+msgid "There are no schools in VIKO. Create new school using the link below."
+msgstr "В VIKO нет ни одной школы. Создайте новую школу с помощью ссылки внизу."
+
+#: ../lib/Module/Statistics.php:144
+msgid "List of all schools in VIKO server."
+msgstr "Список всех школ на сервере VIKO."
+
+#: ../lib/Module/Statistics.php:147
+msgid "Nr of teachers"
+msgstr "Учителей"
+
+#: ../lib/Module/Statistics.php:149
+#: ../lib/Module/Students.php:125
+#: ../lib/Module/Teachers.php:117
+msgid "Nr of courses"
+msgstr "Курсов"
+
+#: ../lib/Module/Statistics.php:150
+#: ../lib/Module/Statistics.php:532
+msgid "Size of files"
+msgstr "Размер файлов"
+
+#: ../lib/Module/Statistics.php:241
+msgid "Total %nr1% schools in VIKO. %nr2% of these having at least 10 students."
+msgstr "Всего школ в VIKO: %nr1%. Из них имеют не менее 10 учеников: %nr2%."
+
+#: ../lib/Module/Statistics.php:267
+msgid "Users"
+msgstr "Пользователи"
+
+#: ../lib/Module/Statistics.php:270
+msgid "General statistics"
+msgstr "Общая статистика"
+
+#: ../lib/Module/Statistics.php:303
+#: ../lib/Module/Teachers.php:73
+msgid "Add school administrator"
+msgstr "Добавить школьного администратора"
+
+#: ../lib/Module/Statistics.php:341
+msgid "There are no school administrators in this school."
+msgstr "В указанной школе нет ни одного администратора."
+
+#: ../lib/Module/Statistics.php:344
+msgid "List of all schooladmins in this school"
+msgstr "Список всех школьных администраторов указанной школы"
+
+#: ../lib/Module/Statistics.php:347
+#: ../lib/Module/Teachers.php:119
+msgid "Delete user"
+msgstr "Удалить пользователя"
+
+#: ../lib/Module/Statistics.php:385
+msgid "Number of classes, courses and lessons in the school"
+msgstr "Количество классов, курсов и уроков в указанной школе"
+
+#: ../lib/Module/Statistics.php:387
+msgid "Entity"
+msgstr "Объект"
+
+#: ../lib/Module/Statistics.php:388
+msgid "Count"
+msgstr "Количество"
+
+#: ../lib/Module/Statistics.php:436
+#: ../lib/Module/Course/Lessons.php:109
+#: ../lib/Module/Course/Marks.php:632
+msgid "Lessons"
+msgstr "Уроки"
+
+#: ../lib/Module/Statistics.php:454
+msgid "Number of users from different groups in the school"
+msgstr "Количество пользователей из различных категорий в указанной школе"
+
+#: ../lib/Module/Statistics.php:456
+#: ../lib/Module/Teachers.php:116
+#: ../lib/Module/User.php:586
+msgid "User group"
+msgstr "Категория пользователей"
+
+#: ../lib/Module/Statistics.php:457
+msgid "Nr of users"
+msgstr "Пользователей"
+
+#: ../lib/Module/Statistics.php:481
+msgid "There are no users in this school."
+msgstr "В указанной школе нет ни одного пользователя."
+
+#: ../lib/Module/Statistics.php:486
+msgid "Administrators"
+msgstr "Администраторы"
+
+#: ../lib/Module/Statistics.php:492
+#: ../lib/Module/Course/Students.php:112
+msgid "Students"
+msgstr "Ученики"
+
+#: ../lib/Module/Statistics.php:524
+msgid "List of all courses in this school."
+msgstr "Список всех курсов в указанной школе."
+
+#: ../lib/Module/Statistics.php:528
+msgid "Nr of visits"
+msgstr "Посещений"
+
+#: ../lib/Module/Statistics.php:529
+msgid "Nr of grades"
+msgstr "Оценок"
+
+#: ../lib/Module/Statistics.php:530
+#: ../lib/Module/Students.php:127
+#: ../lib/Module/Course/Students.php:513
+msgid "Nr of messages"
+msgstr "Сообщений"
+
+#: ../lib/Module/Statistics.php:531
+#: ../lib/Module/Students.php:128
+#: ../lib/Module/Course/Students.php:514
+msgid "Nr of materials"
+msgstr "Материалов"
+
+#: ../lib/Module/Statistics.php:552
+msgid "There are no courses in this school."
+msgstr "В указанной школе нет ни одного курса."
+
+#: ../lib/Module/Students.php:84
+msgid "You are not authorized to add or edit students."
+msgstr "Вы не имеете привилегий для добавления или изменения учеников."
+
+#: ../lib/Module/Students.php:96
+msgid "You are not authorized to access this form."
+msgstr "Вы не имеете привилегий для просмотра указанного класса."
+
+#: ../lib/Module/Students.php:99
+msgid "Students of %form_name%"
+msgstr "Ученики %form_name% класса"
+
+#: ../lib/Module/Students.php:107
+msgid "Add student"
+msgstr "Добавить ученика"
+
+#: ../lib/Module/Students.php:122
+msgid "List of all students in this form"
+msgstr "Список всех учеников указанного класса"
+
+#: ../lib/Module/Students.php:124
+#: ../lib/Module/Course/Marks.php:392
+#: ../lib/Module/Course/Students.php:509
+#: ../lib/Module/Course/Students.php:520
+msgid "Student name"
+msgstr "Имя ученика"
+
+#: ../lib/Module/Students.php:126
+#: ../lib/Module/Course/Students.php:512
+msgid "Nr of loads"
+msgstr "Посещений"
+
+#: ../lib/Module/Students.php:129
+msgid "Delete student"
+msgstr "Удалить ученика"
+
+#: ../lib/Module/Students.php:140
+msgid "There are no students in this form."
+msgstr "В указанном классе нет ни одного ученика."
+
+#: ../lib/Module/Teachers.php:61
+msgid "You are not authorized to add or edit teachers and school administrators."
+msgstr "Вы не имеете привилегий для добавления или изменения учителей и школьных администраторов."
+
+#: ../lib/Module/Teachers.php:66
+msgid "Teachers and schooladmins"
+msgstr "Учителя и школьные администраторы"
+
+#: ../lib/Module/Teachers.php:72
+msgid "Add teacher"
+msgstr "Добавить учителя"
+
+#: ../lib/Module/Teachers.php:113
+msgid "List of all teachers and schooladmins in this school"
+msgstr "Список всех учителей и школьных администраторов в указанной школе"
+
+#: ../lib/Module/Teachers.php:118
+msgid "Nr of lessons"
+msgstr "Уроков"
+
+#: ../lib/Module/Teachers.php:137
+msgid "You can not delete youself!"
+msgstr "Вы не можете удалить себя!"
+
+#: ../lib/Module/Teachers.php:153
+#: ../lib/Module/User.php:578
+msgid "School administrator"
+msgstr "Школьный администратор"
+
+#: ../lib/Module/User.php:162
+msgid "The user you are trying to access does not exist."
+msgstr "Указанного вами пользователя не существует."
+
+#: ../lib/Module/User.php:174
+msgid "You can not access user of another school."
+msgstr "Вы не можете просматривать пользователей других школ."
+
+#: ../lib/Module/User.php:207
+msgid "You are not authorized to view information about other users."
+msgstr "Вы не имеете привилегий для просмотра информации об остальных пользователях."
+
+#: ../lib/Module/User.php:221
+#: ../lib/Module/User.php:233
+msgid "missing"
+msgstr "отсутствует"
+
+#: ../lib/Module/User.php:269
+msgid "You are not authorized to edit users."
+msgstr "У вас нет привилегий для изменения пользователей."
+
+#: ../lib/Module/User.php:273
+msgid "Change user"
+msgstr "Изменить пользователя"
+
+#: ../lib/Module/User.php:279
+msgid "User successfully modified."
+msgstr "Пользователь успешно изменён."
+
+#: ../lib/Module/User.php:301
+msgid "You are not authorized to add users."
+msgstr "У вас нет привилегий для добавления пользователей."
+
+#: ../lib/Module/User.php:304
+msgid "Add user"
+msgstr "Добавить пользователя"
+
+#: ../lib/Module/User.php:310
+msgid "User successfully added."
+msgstr "Пользователь успешно добавлен."
+
+#: ../lib/Module/User.php:332
+msgid "You are not authorized to delete users."
+msgstr "У вас нет привилегий для удаления пользователей."
+
+#: ../lib/Module/User.php:337
+msgid "Deleting of user"
+msgstr "Удаление пользователя"
+
+#: ../lib/Module/User.php:341
+msgid "User was successfully deleted."
+msgstr "Пользователь был успешно удалён."
+
+#: ../lib/Module/User.php:362
+#, php-format
+msgid "Return to the school %s"
+msgstr "Обратно к школе %s"
+
+#: ../lib/Module/User.php:377
+#, php-format
+msgid "Return to the form %s"
+msgstr "Обратно к классу %s"
+
+#: ../lib/Module/User.php:382
+msgid "Return to the list of teachers and schooladmins"
+msgstr "Обратно к списку учителей и школьных администраторов"
+
+#: ../lib/Module/User.php:392
+msgid "Return to the list of studens"
+msgstr "Обратно к списку учеников"
+
+#: ../lib/Module/User.php:395
+msgid "Return to the list of marks"
+msgstr "Обратно к списку оценок"
+
+#: ../lib/Module/User.php:398
+msgid "Return to the forum"
+msgstr "Обратно в форум"
+
+#: ../lib/Module/User.php:401
+msgid "Return to the previous page"
+msgstr "На предыдущую страницу"
+
+#: ../lib/Module/User.php:580
+msgid "Student"
+msgstr "Ученик"
+
+#: ../lib/Module/Course/Forum.php:130
+msgid "Forum"
+msgstr "Форум"
+
+#: ../lib/Module/Course/Forum.php:143
+msgid "Course forum"
+msgstr "Форум курса"
+
+#: ../lib/Module/Course/Forum.php:173
+msgid "Only teacher can delete forum posts and topics."
+msgstr "Только учитель может удалять темы и посты форума."
+
+#: ../lib/Module/Course/Forum.php:215
+msgid "Add new topic"
+msgstr "Добавить новую тему"
+
+#: ../lib/Module/Course/Forum.php:269
+msgid "Selected forum topic does not exist."
+msgstr "Указанная тема на форуме отсутствует."
+
+#: ../lib/Module/Course/Forum.php:277
+msgid "Selected forum topic does not belong to this course."
+msgstr "Указанная тема форума не относится к данному курсу."
+
+#: ../lib/Module/Course/Forum.php:298
+msgid "Selected forum post does not exist."
+msgstr "Указанный пост в форуме отсутствует."
+
+#: ../lib/Module/Course/Forum.php:307
+msgid "Selected forum post does not belong to this course."
+msgstr "Указанный пост форума не принадлежит данному курсу."
+
+#: ../lib/Module/Course/Forum.php:340
+#: ../lib/Module/Course/Forum.php:457
+#: ../lib/Module/Course/Forum.php:472
+msgid "Topic"
+msgstr "Тема"
+
+#: ../lib/Module/Course/Forum.php:341
+msgid "Nr of answers"
+msgstr "Ответов"
+
+#: ../lib/Module/Course/Forum.php:342
+msgid "First post"
+msgstr "Первый пост"
+
+#: ../lib/Module/Course/Forum.php:343
+msgid "Last post"
+msgstr "Последний пост"
+
+#: ../lib/Module/Course/Forum.php:346
+msgid "Delete topic"
+msgstr "Удалить тему"
+
+#: ../lib/Module/Course/Forum.php:387
+msgid "This forum is empty. You can add new topic by using the form below."
+msgstr "Форум пуст. Вы можете добавить новую тему с помощью формы внизу."
+
+#: ../lib/Module/Course/Forum.php:448
+#: ../lib/Module/Course/Forum.php:584
+msgid "Author"
+msgstr "Автор"
+
+#: ../lib/Module/Course/Forum.php:462
+msgid "You have to specify a title for the new topic."
+msgstr "Вы должны указать название новой темы."
+
+#: ../lib/Module/Course/Forum.php:481
+#: ../lib/Module/Course/Forum.php:585
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../lib/Module/Course/Forum.php:486
+msgid "You have to add some content to the message."
+msgstr "Вы должны добавить содержание вашего сообщения."
+
+#: ../lib/Module/Course/Forum.php:493
+msgid "Post new topic"
+msgstr "Создать новую тему"
+
+#: ../lib/Module/Course/Forum.php:496
+#: ../lib/Module/Course/Forum.php:528
+msgid "Add comment"
+msgstr "Добавить комментарий"
+
+#: ../lib/Module/Course/Forum.php:533
+msgid "Forum topic"
+msgstr "Тема форума"
+
+#: ../lib/Module/Course/Forum.php:539
+msgid "Return to the list of forum topics"
+msgstr "Обратно к списку тем форума"
+
+#: ../lib/Module/Course/Forum.php:588
+msgid "Delete post"
+msgstr "Удалить пост"
+
+#: ../lib/Module/Course/Forum.php:694
+msgid "Delete post of %personname%"
+msgstr "Удалить пост %personname%"
+
+#: ../lib/Module/Course/Info.php:88
+msgid "Course info"
+msgstr "Информация курса"
+
+#: ../lib/Module/Course/Info.php:101
+msgid "General information about course"
+msgstr "Общая информация курса"
+
+#: ../lib/Module/Course/Info.php:145
+msgid "Course data has been successfully saved."
+msgstr "Информация курса успешно сохранена."
+
+#: ../lib/Module/Course/Info.php:159
+msgid "View as student"
+msgstr "Посмотреть в качестве ученика"
+
+#: ../lib/Module/Course/Info.php:203
+#: ../lib/Module/Course/Info.php:280
+msgid "Course content"
+msgstr "Содержание курса"
+
+#: ../lib/Module/Course/Info.php:204
+#: ../lib/Module/Course/Info.php:286
+msgid "Assessment"
+msgstr "Оценивание"
+
+#: ../lib/Module/Course/Info.php:205
+#: ../lib/Module/Course/Info.php:292
+msgid "Books"
+msgstr "Книги"
+
+#: ../lib/Module/Course/Info.php:206
+#: ../lib/Module/Course/Info.php:298
+msgid "Scheduled time"
+msgstr "Когда состоится"
+
+#: ../lib/Module/Course/Info.php:207
+#: ../lib/Module/Course/Info.php:304
+msgid "Classroom"
+msgstr "Классная комната"
+
+#: ../lib/Module/Course/Info.php:208
+#: ../lib/Module/Course/Info.php:310
+msgid "Consultations"
+msgstr "Консультации"
+
+#: ../lib/Module/Course/Info.php:223
+msgid "Return to course info editing"
+msgstr "Обратно к изменению информации курса"
+
+#: ../lib/Module/Course/Info.php:321
+msgid "Restore"
+msgstr "Восстановить"
+
+#: ../lib/Module/Course/Info.php:326
+msgid "You are required to specify course name."
+msgstr "Вам необходимо указать имя курса."
+
+#: ../lib/Module/Course/Lessons.php:122
+msgid "Lessons of course"
+msgstr "Уроки курса"
+
+#: ../lib/Module/Course/Lessons.php:137
+msgid "Only teacher of the course can add or remove lessons."
+msgstr "Только учитель курса может добавлять или удалять уроки."
+
+#: ../lib/Module/Course/Lessons.php:147
+msgid "Selected lesson does not exist."
+msgstr "Указанного урока не существует."
+
+#: ../lib/Module/Course/Lessons.php:155
+msgid "Selected lesson does not belong to this course."
+msgstr "Указанный урок не принадлежит к данному курсу."
+
+#: ../lib/Module/Course/Lessons.php:193
+#: ../lib/Module/Course/Lessons.php:390
+msgid "Date"
+msgstr "Дата"
+
+#: ../lib/Module/Course/Lessons.php:194
+#: ../lib/Module/Course/Lessons.php:397
+msgid "Lesson topics"
+msgstr "Содержание урока"
+
+#: ../lib/Module/Course/Lessons.php:201
+msgid "Remove lesson"
+msgstr "Удалить урок"
+
+#: ../lib/Module/Course/Lessons.php:204
+msgid "Mark"
+msgstr "Оценка"
+
+#: ../lib/Module/Course/Lessons.php:224
+#: ../lib/Module/Course/Lessons.php:369
+msgid "Add lesson"
+msgstr "Добавить урок"
+
+#: ../lib/Module/Course/Lessons.php:233
+#: ../lib/Module/Course/Marks.php:349
+msgid "Assessment marks are in bold face."
+msgstr "Учётные оценки выделяются жирным шрифтом."
+
+#: ../lib/Module/Course/Lessons.php:241
+msgid "There are no lessons on this course."
+msgstr "На данном курсе нет ни одного урока."
+
+#: ../lib/Module/Course/Lessons.php:279
+msgid "Delete lesson"
+msgstr "Удалить урок"
+
+#: ../lib/Module/Course/Lessons.php:347
+msgid "Return to the list of lessons"
+msgstr "Обратно к списку уроков"
+
+#: ../lib/Module/Course/Lessons.php:366
+msgid "Change lesson"
+msgstr "Изменить урок"
+
+#: ../lib/Module/Course/Lessons.php:421
+msgid "Lesson topic field must not be left blank."
+msgstr "Поле с содержанием урока не должно быть пустым."
+
+#: ../lib/Module/Course/Lessons.php:502
+msgid "Deleting lesson failed."
+msgstr "Не удалось удалить урок."
+
+#: ../lib/Module/Course/Marks.php:115
+msgid "Course assessment"
+msgstr "Оценивание курса"
+
+#: ../lib/Module/Course/Marks.php:142
+msgid "You are not authorized to edit marks of this course."
+msgstr "У вас нет привилегий для изменения оценок данного курса."
+
+#: ../lib/Module/Course/Marks.php:165
+msgid "Edit marks"
+msgstr "Изменить оценки"
+
+#: ../lib/Module/Course/Marks.php:170
+msgid "Marks for lesson at %date%"
+msgstr "Оценки курса за %date%"
+
+#: ../lib/Module/Course/Marks.php:194
+msgid "Return to marks page"
+msgstr "Обратно на страницу оценок"
+
+#: ../lib/Module/Course/Marks.php:245
+msgid "Preliminary marks"
+msgstr "Учётные оценки"
+
+#: ../lib/Module/Course/Marks.php:329
+msgid "To assign marks, you need to add lessons and students to this course."
+msgstr "Для добавления оценок вам необходимо добавить уроки и учеников для данного курса."
+
+#: ../lib/Module/Course/Marks.php:398
+msgid "Average mark"
+msgstr "Средняя оценка"
+
+#: ../lib/Module/Course/Marks.php:431
+msgid "Editing"
+msgstr "Изменение"
+
+#: ../lib/Module/Course/Marks.php:623
+#: ../lib/Module/Course/Marks.php:628
+msgid "all lessons"
+msgstr "все уроки"
+
+#: ../lib/Module/Course/Materials.php:140
+msgid "Materials"
+msgstr "Материалы"
+
+#: ../lib/Module/Course/Materials.php:153
+msgid "Manage materials"
+msgstr "Управление материалами"
+
+#: ../lib/Module/Course/Materials.php:167
+msgid "The selected material does not exist."
+msgstr "Указанного материала не существует."
+
+#: ../lib/Module/Course/Materials.php:173
+msgid "The selected material does not belong to this course."
+msgstr "Указанный материал не принадлежит данному курсу."
+
+#: ../lib/Module/Course/Materials.php:233
+#: ../lib/Module/Course/Materials.php:733
+#: ../lib/Module/Course/Materials.php:756
+msgid "Add file"
+msgstr "Добавить файл"
+
+#: ../lib/Module/Course/Materials.php:234
+#: ../lib/Module/Course/Materials.php:642
+#: ../lib/Module/Course/Materials.php:665
+msgid "Add link"
+msgstr "Добавить ссылку"
+
+#: ../lib/Module/Course/Materials.php:235
+#: ../lib/Module/Course/Materials.php:562
+#: ../lib/Module/Course/Materials.php:585
+msgid "Add folder"
+msgstr "Добавить папку"
+
+#: ../lib/Module/Course/Materials.php:271
+msgid "File name"
+msgstr "Имя файла"
+
+#: ../lib/Module/Course/Materials.php:272
+msgid "File type"
+msgstr "Тип файла"
+
+#: ../lib/Module/Course/Materials.php:273
+msgid "Size"
+msgstr "Размер"
+
+#: ../lib/Module/Course/Materials.php:275
+msgid "Delete material"
+msgstr "Удалить материал"
+
+#: ../lib/Module/Course/Materials.php:285
+msgid "Parent folder"
+msgstr "Предыдущая папка"
+
+#: ../lib/Module/Course/Materials.php:300
+msgid "There are no materials on this course. To add new materials use the links below."
+msgstr "Данный курс не содержит материалов. Воспользуйтесь ссылками внизу для их добавления."
+
+#: ../lib/Module/Course/Materials.php:512
+msgid "You are not allowed to delete this material."
+msgstr "Вы не имеете привилегий для удаления указанного материала."
+
+#: ../lib/Module/Course/Materials.php:517
+msgid "The deleting of material did not succeed."
+msgstr "Не удалось удалить материалы."
+
+#: ../lib/Module/Course/Materials.php:544
+msgid "Only teacher can add folders."
+msgstr "Только учитель может добавлять папки."
+
+#: ../lib/Module/Course/Materials.php:549
+msgid "You can only add folders inside folders."
+msgstr "Папки можно добавлять только в другие папки."
+
+#: ../lib/Module/Course/Materials.php:587
+#: ../lib/Module/Course/Materials.php:667
+#: ../lib/Module/Course/Materials.php:758
+#: ../lib/Module/Course/Materials.php:856
+msgid "Return to the list of materials"
+msgstr "Обратно к списку материалов"
+
+#: ../lib/Module/Course/Materials.php:622
+msgid "Only teacher can add links."
+msgstr "Только учитель может добавлять ссылки."
+
+#: ../lib/Module/Course/Materials.php:627
+msgid "You can only add links inside folders."
+msgstr "Ссылки можно добавлять только в папки."
+
+#: ../lib/Module/Course/Materials.php:713
+msgid "Only teacher can upload files."
+msgstr "Только учитель может загружать файлы."
+
+#: ../lib/Module/Course/Materials.php:718
+msgid "You can only add files inside folders."
+msgstr "Добавлять файлы можно только в папки."
+
+#: ../lib/Module/Course/Materials.php:824
+msgid "You are not allowed to edit this material."
+msgstr "Вы не можете изменять данный материал."
+
+#: ../lib/Module/Course/Materials.php:968
+msgid "Change file"
+msgstr "Изменить файл"
+
+#: ../lib/Module/Course/Materials.php:969
+msgid "Change folder"
+msgstr "Изменить папку"
+
+#: ../lib/Module/Course/Materials.php:970
+msgid "Change link"
+msgstr "Изменить ссылку"
+
+#: ../lib/Module/Course/Students.php:125
+msgid "Students of course"
+msgstr "Ученики курса"
+
+#: ../lib/Module/Course/Students.php:140
+msgid "Only teacher of the course can add or remove students."
+msgstr "Только учитель данного курса может добавлять или удалять учеников."
+
+#: ../lib/Module/Course/Students.php:214
+#: ../lib/Module/Course/Students.php:487
+msgid "Add students"
+msgstr "Добавить учеников"
+
+#: ../lib/Module/Course/Students.php:216
+msgid "Return to the list of students"
+msgstr "Обратно к списку учеников"
+
+#: ../lib/Module/Course/Students.php:252
+msgid "The selected form does not belong to this school."
+msgstr "Указанный класс не принадлежит данной школе."
+
+#: ../lib/Module/Course/Students.php:282
+msgid "Show students"
+msgstr "Показать учеников"
+
+#: ../lib/Module/Course/Students.php:321
+msgid "Add students to course"
+msgstr "Добавить учеников на курс"
+
+#: ../lib/Module/Course/Students.php:327
+msgid "Select all students"
+msgstr "Отметить всех учеников"
+
+#: ../lib/Module/Course/Students.php:437
+msgid "Selected student does not exist."
+msgstr "Указанного ученика не существует."
+
+#: ../lib/Module/Course/Students.php:444
+msgid "Selected student does not belong to this course."
+msgstr "Указанный ученик не принадлежит данному курсу."
+
+#: ../lib/Module/Course/Students.php:511
+#: ../lib/Module/Course/Students.php:522
+msgid "Last login"
+msgstr "Последнее посещение"
+
+#: ../lib/Module/Course/Students.php:515
+msgid "Remove student"
+msgstr "Удалить ученика"
+
+#: ../lib/Module/Course/Students.php:531
+msgid "There are no students on this course."
+msgstr "На данном курсе нет учеников."
+
+#: ../lib/Module/Course/Students.php:661
+#, php-format
+msgid "Remove %s"
+msgstr "Удалить %s"
+
+#: ../lib/HTML/QuickForm/Renderer/VIKO.php:86
+msgid "required"
+msgstr "необходимо"
+

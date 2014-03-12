@@ -1,0 +1,128 @@
+VIKO 2.1
+==========
+
+ * New features in materials section:
+	Add Embed - Possobility to add, change, watch or delete the embed content.
+	Add Text - Possobility to add, change, read or delete text - added simple TinyMCE editor.
+
+VIKO 2.0.1
+==========
+
+ * Fixed critical bug, that caused text to disappear when upgrading to
+   PHP 5.2.5.
+
+
+
+VIKO 2.0
+========
+
+ * Fixed the bug in database upgrading script, that caused some pages to
+   render really slowly. Indexes were missing from two of the tables.
+
+
+
+VIKO 2.0 RC4
+============
+
+Bugfixes:
+
+ * Fixed the problem with multitudes of zeros appearing in the grades list
+   of students.
+
+ * Fixed the problem of downloads not stopping immediately when the file was
+   fully downloaded. Also fixed the frequent corruption of larger downloaded
+   files.
+
+ * Added support for more file types. Most notably fixed the case of MS Excel
+   files not being recognized and problems with MS PowerPoint files having .pps
+   extension.
+
+ * Improvements in page display on various browsers.
+
+
+
+VIKO 2.0 RC3
+============
+
+Bugfixes:
+
+ * Fixed fatal error on global statistics page.
+
+ * VIKO now recognizes pre VIKO 1.1 passwords.
+
+ * Significant improvements in handling of large uploaded files.
+
+ * Improvements to the initialization of GetText.
+
+ * Simplified configuration file by removing unimportant options.
+
+ * Improvements in page display on various browsers.
+
+
+
+VIKO 2.0 RC2
+============
+
+Bugfixes:
+
+ * Added the missing PEAR base package.
+
+ * Better identification of file types when converting from VIKO 1.1.
+
+ * On My VIKO page, the grades are listed in chronological order.
+
+ * Added requirement for GetText into intsallation instructions.
+
+ * Improved lessons page by adding abbreviated weekday names to dates.
+
+ * Minor fixes in translations.
+
+
+
+VIKO 2.0 RC1
+============
+
+VIKO 2.0 Is a complete rewrite of VIKO 1.1.
+
+New features and improvements:
+
+ * User interface is localized. At the moment english, estonian and russian
+   translations exist.
+
+ * Unified the interface of adding/changing/removing of different entities like
+   teachers, students, courses, materials...
+
+ * One login page for all types of users - previously there were separate login
+   pages for students, teachers and admins.
+
+ * School administrator can add students - previously the only way was, that
+   users register themeselves.
+
+ * Teachers and school administrators can also belong into classes.
+
+ * Separate sections for course links and files were unified into one
+   "Materials" section.
+
+ * Infinite nesting level of subfolders allowed.
+
+ * Students can upload files.
+
+ * Simple configuration file viko.conf enables:
+     - change MySQL database name, username and password;
+     - set the default language of the interface;
+     - set the limit for size of uploaded files;
+     - enable/disable students to register themselves into VIKO;
+     - enable/disable uploading of files by students;
+     - enable/disable adding links by students;
+
+ * Simple way to modify the contents on the front page of VIKO.
+
+ * Pages now validate as XHTML 1.0 Strict and CSS 2.0.
+
+ * The structure of pages conforms at least to the WCAG Level AA.
+   http://www.w3.org/TR/WAI-WEBCONTENT/WCAG
+
+ * Ugly URL-s like /showlesson.php?lesson_id=225&course_id=28 replaced with
+   nicer ones like /28/lessons/225.
+
+ * Files uploaded to VIKO are stored inside database.
